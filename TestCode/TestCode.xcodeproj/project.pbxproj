@@ -14,6 +14,8 @@
 		D6CDA08A1B86F2FA00ECBFEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CDA0891B86F2FA00ECBFEF /* Images.xcassets */; };
 		D6CDA08D1B86F2FA00ECBFEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CDA08B1B86F2FA00ECBFEF /* LaunchScreen.xib */; };
 		D6CDA0991B86F2FB00ECBFEF /* TestCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA0981B86F2FB00ECBFEF /* TestCodeTests.m */; };
+		D6CDA0A71B86F72D00ECBFEF /* TrafficCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA0A51B86F72C00ECBFEF /* TrafficCountViewController.m */; };
+		D6CDA0A81B86F72D00ECBFEF /* TrafficCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CDA0A61B86F72C00ECBFEF /* TrafficCountViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		D6CDA0921B86F2FA00ECBFEF /* TestCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CDA0971B86F2FA00ECBFEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6CDA0981B86F2FB00ECBFEF /* TestCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCodeTests.m; sourceTree = "<group>"; };
+		D6CDA0A41B86F72C00ECBFEF /* TrafficCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficCountViewController.h; sourceTree = "<group>"; };
+		D6CDA0A51B86F72C00ECBFEF /* TrafficCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficCountViewController.m; sourceTree = "<group>"; };
+		D6CDA0A61B86F72C00ECBFEF /* TrafficCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficCountViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,7 @@
 				D6CDA0831B86F2FA00ECBFEF /* ViewController.h */,
 				D6CDA0841B86F2FA00ECBFEF /* ViewController.m */,
 				D6CDA0861B86F2FA00ECBFEF /* Main.storyboard */,
+				D6CDA0A21B86F6B800ECBFEF /* functions */,
 				D6CDA0891B86F2FA00ECBFEF /* Images.xcassets */,
 				D6CDA08B1B86F2FA00ECBFEF /* LaunchScreen.xib */,
 				D6CDA07C1B86F2FA00ECBFEF /* Supporting Files */,
@@ -117,6 +123,24 @@
 				D6CDA0971B86F2FA00ECBFEF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6CDA0A21B86F6B800ECBFEF /* functions */ = {
+			isa = PBXGroup;
+			children = (
+				D6CDA0A31B86F70100ECBFEF /* TrafficCount */,
+			);
+			path = functions;
+			sourceTree = "<group>";
+		};
+		D6CDA0A31B86F70100ECBFEF /* TrafficCount */ = {
+			isa = PBXGroup;
+			children = (
+				D6CDA0A41B86F72C00ECBFEF /* TrafficCountViewController.h */,
+				D6CDA0A51B86F72C00ECBFEF /* TrafficCountViewController.m */,
+				D6CDA0A61B86F72C00ECBFEF /* TrafficCountViewController.xib */,
+			);
+			path = TrafficCount;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +225,7 @@
 			files = (
 				D6CDA0881B86F2FA00ECBFEF /* Main.storyboard in Resources */,
 				D6CDA08D1B86F2FA00ECBFEF /* LaunchScreen.xib in Resources */,
+				D6CDA0A81B86F72D00ECBFEF /* TrafficCountViewController.xib in Resources */,
 				D6CDA08A1B86F2FA00ECBFEF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +246,7 @@
 			files = (
 				D6CDA0851B86F2FA00ECBFEF /* ViewController.m in Sources */,
 				D6CDA0821B86F2FA00ECBFEF /* AppDelegate.m in Sources */,
+				D6CDA0A71B86F72D00ECBFEF /* TrafficCountViewController.m in Sources */,
 				D6CDA07F1B86F2FA00ECBFEF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

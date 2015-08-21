@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "TrafficCountViewController.h"
 @interface ViewController (){
     NSArray *functionNameArray;
 }
@@ -42,7 +42,16 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    switch (indexPath.row) {
+        case 0:{
+            TrafficCountViewController *vc=[[TrafficCountViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        default:
+            break;
+    }
 }
 
 
