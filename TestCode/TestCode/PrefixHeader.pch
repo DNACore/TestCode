@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  TestCode
+//
+//  Created by Encoder on 15/8/21.
+//  Copyright (c) 2015年 Encoder. All rights reserved.
+//
+
+#ifndef TestCode_PrefixHeader_pch
+#define TestCode_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif

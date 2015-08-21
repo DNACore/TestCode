@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D69EF8AD1B872661000B7976 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D6CDA0791B86F2FA00ECBFEF /* TestCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CDA07D1B86F2FA00ECBFEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6CDA07E1B86F2FA00ECBFEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 			children = (
 				D6CDA07D1B86F2FA00ECBFEF /* Info.plist */,
 				D6CDA07E1B86F2FA00ECBFEF /* main.m */,
+				D69EF8AD1B872661000B7976 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -375,6 +377,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TestCode/PrefixHeader.pch;
 				INFOPLIST_FILE = TestCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -385,6 +389,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TestCode/PrefixHeader.pch;
 				INFOPLIST_FILE = TestCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +450,7 @@
 				D6CDA09E1B86F2FB00ECBFEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6CDA09F1B86F2FB00ECBFEF /* Build configuration list for PBXNativeTarget "TestCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +459,7 @@
 				D6CDA0A11B86F2FB00ECBFEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
