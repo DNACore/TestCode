@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6C28F071B8C5633008D230E /* MemoryTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C28F061B8C5633008D230E /* MemoryTool.m */; };
 		D6CDA07F1B86F2FA00ECBFEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA07E1B86F2FA00ECBFEF /* main.m */; };
 		D6CDA0821B86F2FA00ECBFEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA0811B86F2FA00ECBFEF /* AppDelegate.m */; };
 		D6CDA0851B86F2FA00ECBFEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA0841B86F2FA00ECBFEF /* ViewController.m */; };
@@ -30,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		D69EF8AD1B872661000B7976 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D6C28F051B8C5633008D230E /* MemoryTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryTool.h; sourceTree = "<group>"; };
+		D6C28F061B8C5633008D230E /* MemoryTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryTool.m; sourceTree = "<group>"; };
 		D6CDA0791B86F2FA00ECBFEF /* TestCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CDA07D1B86F2FA00ECBFEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6CDA07E1B86F2FA00ECBFEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D6C28F041B8C55D7008D230E /* MemoryTool */ = {
+			isa = PBXGroup;
+			children = (
+				D6C28F051B8C5633008D230E /* MemoryTool.h */,
+				D6C28F061B8C5633008D230E /* MemoryTool.m */,
+			);
+			path = MemoryTool;
+			sourceTree = "<group>";
+		};
 		D6CDA0701B86F2FA00ECBFEF = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +142,7 @@
 		D6CDA0A21B86F6B800ECBFEF /* functions */ = {
 			isa = PBXGroup;
 			children = (
+				D6C28F041B8C55D7008D230E /* MemoryTool */,
 				D6CDA0A31B86F70100ECBFEF /* TrafficCount */,
 			);
 			path = functions;
@@ -247,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6CDA0851B86F2FA00ECBFEF /* ViewController.m in Sources */,
+				D6C28F071B8C5633008D230E /* MemoryTool.m in Sources */,
 				D6CDA0821B86F2FA00ECBFEF /* AppDelegate.m in Sources */,
 				D6CDA0A71B86F72D00ECBFEF /* TrafficCountViewController.m in Sources */,
 				D6CDA07F1B86F2FA00ECBFEF /* main.m in Sources */,

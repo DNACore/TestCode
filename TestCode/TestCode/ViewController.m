@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TrafficCountViewController.h"
+#import "MemoryTool.h"
 @interface ViewController (){
     NSArray *functionNameArray;
 }
@@ -21,7 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     functionNameArray=[NSArray arrayWithObjects:
-                   @"流量统计",
+                       @"流量统计",
+                       @"内存占用",
                    nil];
     [self.mainTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseCellIdn"];
 }
@@ -49,6 +51,17 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+        case 1:{
+            UIAlertController *alertController=[UIAlertController alertControllerWithTitle:@"信息"
+                                                                                   message:[NSString stringWithFormat:@"设备可用内存：%f\n当前程序占用内存：%f",[MemoryTool availableMemory],[MemoryTool usedMemory]]
+                                                                            preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *alertAction=[UIAlertAction actionWithTitle:@"确定"
+                                                                style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction *action) {
+                                                              }];
+            [alertController addAction:alertAction];
+            [self presentViewController:alertController animated:YES completion:nil];
+        }
         default:
             break;
     }

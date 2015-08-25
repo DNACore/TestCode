@@ -10,7 +10,12 @@
 #import <net/if.h>
 #import "TrafficCountViewController.h"
 
-@interface TrafficCountViewController ()
+@interface TrafficCountViewController (){
+    
+    __weak IBOutlet UILabel *mobileTrafficLabel;
+    
+    __weak IBOutlet UILabel *WiFiTrafficLabel;
+}
 
 @end
 
@@ -19,8 +24,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSLog(@"移动数据流量：%i",getGprs3GFlowIOBytes());
-    NSLog(@"WiFi数据流量：%lli",[self getInterfaceBytes]);
+//    NSLog(@"移动数据流量：%@",bytesToAvaiUnit(getGprs3GFlowIOBytes()));
+//    NSLog(@"WiFi数据流量：%@",bytesToAvaiUnit([self getInterfaceBytes]));
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self refreshData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,6 +47,20 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)refreshButtonAction:(id)sender {
+    [self refreshData];
+}
+
+- (void)refreshData{
+    mobileTrafficLabel.text=[NSString stringWithFormat:@"移动数据流量：%@",bytesToAvaiUnit(getGprs3GFlowIOBytes())];
+    WiFiTrafficLabel.text=[NSString stringWithFormat:@"WiFi数据流量：%@",bytesToAvaiUnit([self getInterfaceBytes])];;
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        
+//       dispatch_async(dispatch_get_main_queue(), ^{
+//           
+//       });
+//    });
+}
 //移动数据流量
 int getGprs3GFlowIOBytes() {//C函数命名方式
     
@@ -127,10 +151,10 @@ int getGprs3GFlowIOBytes() {//C函数命名方式
 }
 
 //单位换算
-NSString* bytesToAvaiUnit(int bytes) {//C语言命名方式
+NSString* bytesToAvaiUnit(long long int bytes) {//C语言命名方式
     if(bytes < 1024)  // B
     {
-        return [NSString stringWithFormat:@"%dB", bytes];
+        return [NSString stringWithFormat:@"%lldB", bytes];
     }
     
     else if(bytes >= 1024 && bytes < 1024 * 1024) // KB
