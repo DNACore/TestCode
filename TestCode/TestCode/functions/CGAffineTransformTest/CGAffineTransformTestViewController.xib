@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CGAffineTransformTestViewController">
+            <connections>
+                <outlet property="testView" destination="ZiI-rY-GRq" id="jFp-QD-eGl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZiI-rY-GRq">
+                    <rect key="frame" x="197" y="89" width="207" height="141"/>
+                    <color key="backgroundColor" red="0.41401110197368424" green="0.76755242598684215" blue="0.99313836348684215" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="207" id="Zay-ac-7Hs"/>
+                        <constraint firstAttribute="height" constant="141" id="e7Y-J8-fQZ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov0-na-IeI">
+                    <rect key="frame" x="197" y="263" width="206" height="30"/>
+                    <state key="normal" title="CGAffineTransformMakeScale">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="CGAffineTransformMakeScaleAction:" destination="-1" eventType="touchUpInside" id="dx1-aI-VNi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttG-IB-LiA">
+                    <rect key="frame" x="216" y="301" width="168" height="30"/>
+                    <state key="normal" title="CGAffineTransformScale">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="CGAffineTransformScaleAction:" destination="-1" eventType="touchUpInside" id="lOI-0T-vyx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="Ov0-na-IeI" secondAttribute="centerY" constant="22" id="GwF-w3-Ie8"/>
+                <constraint firstAttribute="centerX" secondItem="ZiI-rY-GRq" secondAttribute="centerX" constant="-0.5" id="fQp-Ab-iDr"/>
+                <constraint firstAttribute="centerY" secondItem="ttG-IB-LiA" secondAttribute="centerY" constant="-16" id="gaL-Fd-Mrf"/>
+                <constraint firstAttribute="centerX" secondItem="Ov0-na-IeI" secondAttribute="centerX" id="iYL-tx-PME"/>
+                <constraint firstAttribute="centerX" secondItem="ttG-IB-LiA" secondAttribute="centerX" id="j76-i9-Ou2"/>
+                <constraint firstAttribute="centerY" secondItem="ZiI-rY-GRq" secondAttribute="centerY" constant="140.5" id="pMd-ef-0rt"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+</document>

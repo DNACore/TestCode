@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TrafficCountViewController.h"
 #import "MemoryTool.h"
+#import "CGAffineTransformTestViewController.h"
 @interface ViewController (){
     NSArray *functionNameArray;
 }
@@ -24,6 +25,7 @@
     functionNameArray=[NSArray arrayWithObjects:
                        @"流量统计",
                        @"内存占用",
+                       @"动画演示 CGAffineTransform",
                    nil];
     [self.mainTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseCellIdn"];
 }
@@ -61,6 +63,11 @@
                                                               }];
             [alertController addAction:alertAction];
             [self presentViewController:alertController animated:YES completion:nil];
+        }
+            break;
+        case 2:{
+            CGAffineTransformTestViewController *vc=[[CGAffineTransformTestViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
         default:
             break;

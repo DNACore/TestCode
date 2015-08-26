@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D69863F91B8DB0D400F64908 /* CGAffineTransformTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69863F71B8DB0D400F64908 /* CGAffineTransformTestViewController.m */; };
+		D69863FA1B8DB0D400F64908 /* CGAffineTransformTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69863F81B8DB0D400F64908 /* CGAffineTransformTestViewController.xib */; };
 		D6C28F071B8C5633008D230E /* MemoryTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C28F061B8C5633008D230E /* MemoryTool.m */; };
 		D6CDA07F1B86F2FA00ECBFEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA07E1B86F2FA00ECBFEF /* main.m */; };
 		D6CDA0821B86F2FA00ECBFEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA0811B86F2FA00ECBFEF /* AppDelegate.m */; };
@@ -14,22 +16,14 @@
 		D6CDA0881B86F2FA00ECBFEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CDA0861B86F2FA00ECBFEF /* Main.storyboard */; };
 		D6CDA08A1B86F2FA00ECBFEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CDA0891B86F2FA00ECBFEF /* Images.xcassets */; };
 		D6CDA08D1B86F2FA00ECBFEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CDA08B1B86F2FA00ECBFEF /* LaunchScreen.xib */; };
-		D6CDA0991B86F2FB00ECBFEF /* TestCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA0981B86F2FB00ECBFEF /* TestCodeTests.m */; };
 		D6CDA0A71B86F72D00ECBFEF /* TrafficCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA0A51B86F72C00ECBFEF /* TrafficCountViewController.m */; };
 		D6CDA0A81B86F72D00ECBFEF /* TrafficCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CDA0A61B86F72C00ECBFEF /* TrafficCountViewController.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D6CDA0931B86F2FA00ECBFEF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D6CDA0711B86F2FA00ECBFEF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D6CDA0781B86F2FA00ECBFEF;
-			remoteInfo = TestCode;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		D69863F61B8DB0D400F64908 /* CGAffineTransformTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAffineTransformTestViewController.h; sourceTree = "<group>"; };
+		D69863F71B8DB0D400F64908 /* CGAffineTransformTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAffineTransformTestViewController.m; sourceTree = "<group>"; };
+		D69863F81B8DB0D400F64908 /* CGAffineTransformTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CGAffineTransformTestViewController.xib; sourceTree = "<group>"; };
 		D69EF8AD1B872661000B7976 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D6C28F051B8C5633008D230E /* MemoryTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryTool.h; sourceTree = "<group>"; };
 		D6C28F061B8C5633008D230E /* MemoryTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryTool.m; sourceTree = "<group>"; };
@@ -43,9 +37,6 @@
 		D6CDA0871B86F2FA00ECBFEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6CDA0891B86F2FA00ECBFEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D6CDA08C1B86F2FA00ECBFEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D6CDA0921B86F2FA00ECBFEF /* TestCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6CDA0971B86F2FA00ECBFEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6CDA0981B86F2FB00ECBFEF /* TestCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCodeTests.m; sourceTree = "<group>"; };
 		D6CDA0A41B86F72C00ECBFEF /* TrafficCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficCountViewController.h; sourceTree = "<group>"; };
 		D6CDA0A51B86F72C00ECBFEF /* TrafficCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficCountViewController.m; sourceTree = "<group>"; };
 		D6CDA0A61B86F72C00ECBFEF /* TrafficCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficCountViewController.xib; sourceTree = "<group>"; };
@@ -59,16 +50,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6CDA08F1B86F2FA00ECBFEF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D69863F51B8DB07D00F64908 /* CGAffineTransformTest */ = {
+			isa = PBXGroup;
+			children = (
+				D69863F61B8DB0D400F64908 /* CGAffineTransformTestViewController.h */,
+				D69863F71B8DB0D400F64908 /* CGAffineTransformTestViewController.m */,
+				D69863F81B8DB0D400F64908 /* CGAffineTransformTestViewController.xib */,
+			);
+			path = CGAffineTransformTest;
+			sourceTree = "<group>";
+		};
 		D6C28F041B8C55D7008D230E /* MemoryTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				D6CDA07B1B86F2FA00ECBFEF /* TestCode */,
-				D6CDA0951B86F2FA00ECBFEF /* TestCodeTests */,
 				D6CDA07A1B86F2FA00ECBFEF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				D6CDA0791B86F2FA00ECBFEF /* TestCode.app */,
-				D6CDA0921B86F2FA00ECBFEF /* TestCodeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,26 +114,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D6CDA0951B86F2FA00ECBFEF /* TestCodeTests */ = {
-			isa = PBXGroup;
-			children = (
-				D6CDA0981B86F2FB00ECBFEF /* TestCodeTests.m */,
-				D6CDA0961B86F2FA00ECBFEF /* Supporting Files */,
-			);
-			path = TestCodeTests;
-			sourceTree = "<group>";
-		};
-		D6CDA0961B86F2FA00ECBFEF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D6CDA0971B86F2FA00ECBFEF /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		D6CDA0A21B86F6B800ECBFEF /* functions */ = {
 			isa = PBXGroup;
 			children = (
+				D69863F51B8DB07D00F64908 /* CGAffineTransformTest */,
 				D6C28F041B8C55D7008D230E /* MemoryTool */,
 				D6CDA0A31B86F70100ECBFEF /* TrafficCount */,
 			);
@@ -178,24 +154,6 @@
 			productReference = D6CDA0791B86F2FA00ECBFEF /* TestCode.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D6CDA0911B86F2FA00ECBFEF /* TestCodeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D6CDA09F1B86F2FB00ECBFEF /* Build configuration list for PBXNativeTarget "TestCodeTests" */;
-			buildPhases = (
-				D6CDA08E1B86F2FA00ECBFEF /* Sources */,
-				D6CDA08F1B86F2FA00ECBFEF /* Frameworks */,
-				D6CDA0901B86F2FA00ECBFEF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D6CDA0941B86F2FA00ECBFEF /* PBXTargetDependency */,
-			);
-			name = TestCodeTests;
-			productName = TestCodeTests;
-			productReference = D6CDA0921B86F2FA00ECBFEF /* TestCodeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,10 +165,6 @@
 				TargetAttributes = {
 					D6CDA0781B86F2FA00ECBFEF = {
 						CreatedOnToolsVersion = 6.3.1;
-					};
-					D6CDA0911B86F2FA00ECBFEF = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = D6CDA0781B86F2FA00ECBFEF;
 					};
 				};
 			};
@@ -228,7 +182,6 @@
 			projectRoot = "";
 			targets = (
 				D6CDA0781B86F2FA00ECBFEF /* TestCode */,
-				D6CDA0911B86F2FA00ECBFEF /* TestCodeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,13 +195,7 @@
 				D6CDA08D1B86F2FA00ECBFEF /* LaunchScreen.xib in Resources */,
 				D6CDA0A81B86F72D00ECBFEF /* TrafficCountViewController.xib in Resources */,
 				D6CDA08A1B86F2FA00ECBFEF /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D6CDA0901B86F2FA00ECBFEF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D69863FA1B8DB0D400F64908 /* CGAffineTransformTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,27 +210,12 @@
 				D6C28F071B8C5633008D230E /* MemoryTool.m in Sources */,
 				D6CDA0821B86F2FA00ECBFEF /* AppDelegate.m in Sources */,
 				D6CDA0A71B86F72D00ECBFEF /* TrafficCountViewController.m in Sources */,
+				D69863F91B8DB0D400F64908 /* CGAffineTransformTestViewController.m in Sources */,
 				D6CDA07F1B86F2FA00ECBFEF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6CDA08E1B86F2FA00ECBFEF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D6CDA0991B86F2FB00ECBFEF /* TestCodeTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D6CDA0941B86F2FA00ECBFEF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D6CDA0781B86F2FA00ECBFEF /* TestCode */;
-			targetProxy = D6CDA0931B86F2FA00ECBFEF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D6CDA0861B86F2FA00ECBFEF /* Main.storyboard */ = {
@@ -396,6 +328,7 @@
 				INFOPLIST_FILE = TestCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -408,40 +341,7 @@
 				INFOPLIST_FILE = TestCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		D6CDA0A01B86F2FB00ECBFEF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TestCodeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCode.app/TestCode";
-			};
-			name = Debug;
-		};
-		D6CDA0A11B86F2FB00ECBFEF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TestCodeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCode.app/TestCode";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -462,15 +362,6 @@
 			buildConfigurations = (
 				D6CDA09D1B86F2FB00ECBFEF /* Debug */,
 				D6CDA09E1B86F2FB00ECBFEF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D6CDA09F1B86F2FB00ECBFEF /* Build configuration list for PBXNativeTarget "TestCodeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D6CDA0A01B86F2FB00ECBFEF /* Debug */,
-				D6CDA0A11B86F2FB00ECBFEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
