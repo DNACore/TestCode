@@ -10,6 +10,7 @@
 
 @interface CGAffineTransformTestViewController (){
     __weak IBOutlet UIView *testView;
+    __weak IBOutlet UISlider *slider;
 }
 
 @end
@@ -19,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [slider addTarget:self action:@selector(CGAffineTransformAnimation:) forControlEvents:UIControlEventValueChanged];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,11 +28,36 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)CGAffineTransformMakeScaleAction:(id)sender {
-    testView.transform=CGAffineTransformMakeScale(0.7,0.7);
+    NSLog(@"a=%f b=%f c=%f d=%f tx=%f ty=%f",testView.transform.a,testView.transform.b,testView.transform.c,testView.transform.d,testView.transform.tx,testView.transform.ty);
+    testView.transform=CGAffineTransformMakeScale(0.7,0.7);//设置transform的值
+    NSLog(@"a=%f b=%f c=%f d=%f tx=%f ty=%f",testView.transform.a,testView.transform.b,testView.transform.c,testView.transform.d,testView.transform.tx,testView.transform.ty);
 }
 - (IBAction)CGAffineTransformScaleAction:(id)sender {
-    testView.transform=CGAffineTransformScale(testView.transform,0.5,0.5);
+    NSLog(@"a=%f b=%f c=%f d=%f tx=%f ty=%f",testView.transform.a,testView.transform.b,testView.transform.c,testView.transform.d,testView.transform.tx,testView.transform.ty);
+    testView.transform=CGAffineTransformScale(testView.transform,0.5,0.5);//设置transform的比率
+    NSLog(@"a=%f b=%f c=%f d=%f tx=%f ty=%f",testView.transform.a,testView.transform.b,testView.transform.c,testView.transform.d,testView.transform.tx,testView.transform.ty);
 }
+- (IBAction)CGAffineTransformMakeRotationAction:(id)sender {
+    testView.transform=CGAffineTransformMakeRotation(M_PI_4);
+}
+- (IBAction)CGAffineTransformRotateAction:(id)sender {
+    testView.transform=CGAffineTransformRotate(testView.transform, M_PI_4);
+}
+
+-(void)CGAffineTransformAnimation:(UISlider *)currentSlider{
+    float value=currentSlider.value;
+    testView.transform=CGAffineTransformMakeScale(value,value);
+    //testView.transform=CGAffineTransformScale(testView.transform,value,value);
+    testView.transform=CGAffineTransformRotate(testView.transform, M_PI_4);
+}
+
+//下面的和上面的方法效果是不一样的，上面每次设置缩放的值得时候都会设置下transform的旋转位置
+//如果改成CGAffineTransformScale试试看，应该缩放和旋转效果都是累加的
+//-(void)CGAffineTransformAnimation:(UISlider *)currentSlider{
+//    NSLog(@"sliderValue:%f",currentSlider.value);
+//    float value=currentSlider.value;
+//    testView.transform=CGAffineTransformRotate(testView.transform, M_PI_4);
+//}
 
 /*
 #pragma mark - Navigation

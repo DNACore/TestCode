@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CGAffineTransformTestViewController">
             <connections>
+                <outlet property="slider" destination="1LY-cW-59N" id="T9S-qC-Ldl"/>
                 <outlet property="testView" destination="ZiI-rY-GRq" id="jFp-QD-eGl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,8 +25,8 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov0-na-IeI">
-                    <rect key="frame" x="197" y="263" width="206" height="30"/>
-                    <state key="normal" title="CGAffineTransformMakeScale">
+                    <rect key="frame" x="180" y="263" width="240" height="30"/>
+                    <state key="normal" title="缩放 CGAffineTransformMakeScale">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -33,23 +34,51 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttG-IB-LiA">
-                    <rect key="frame" x="216" y="301" width="168" height="30"/>
-                    <state key="normal" title="CGAffineTransformScale">
+                    <rect key="frame" x="184" y="301" width="232" height="30"/>
+                    <state key="normal" title="缩放叠加 CGAffineTransformScale">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="CGAffineTransformScaleAction:" destination="-1" eventType="touchUpInside" id="lOI-0T-vyx"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbc-Aa-93I">
+                    <rect key="frame" x="170" y="339" width="260" height="30"/>
+                    <state key="normal" title="旋转 CGAffineTransformMakeRotation">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="CGAffineTransformMakeRotationAction:" destination="-1" eventType="touchUpInside" id="jZe-DD-e5T"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvz-hK-Hv0">
+                    <rect key="frame" x="180" y="377" width="240" height="30"/>
+                    <state key="normal" title="旋转叠加 CGAffineTransformRotate">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="CGAffineTransformRotateAction:" destination="-1" eventType="touchUpInside" id="XCQ-b0-gXk"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1LY-cW-59N">
+                    <rect key="frame" x="6" y="415" width="588" height="31"/>
+                </slider>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="centerY" secondItem="Pbc-Aa-93I" secondAttribute="centerY" constant="-54" id="5Z2-xl-CXT"/>
+                <constraint firstAttribute="centerX" secondItem="Pbc-Aa-93I" secondAttribute="centerX" id="Bb7-Qn-MKY"/>
                 <constraint firstAttribute="centerY" secondItem="Ov0-na-IeI" secondAttribute="centerY" constant="22" id="GwF-w3-Ie8"/>
+                <constraint firstItem="1LY-cW-59N" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="N8I-dp-rH6"/>
+                <constraint firstAttribute="centerY" secondItem="qvz-hK-Hv0" secondAttribute="centerY" constant="-92" id="QfT-e7-iME"/>
+                <constraint firstAttribute="centerY" secondItem="1LY-cW-59N" secondAttribute="centerY" constant="-130" id="VpL-yd-3T9"/>
+                <constraint firstAttribute="trailing" secondItem="1LY-cW-59N" secondAttribute="trailing" constant="8" id="d6q-I7-ipS"/>
                 <constraint firstAttribute="centerX" secondItem="ZiI-rY-GRq" secondAttribute="centerX" constant="-0.5" id="fQp-Ab-iDr"/>
                 <constraint firstAttribute="centerY" secondItem="ttG-IB-LiA" secondAttribute="centerY" constant="-16" id="gaL-Fd-Mrf"/>
                 <constraint firstAttribute="centerX" secondItem="Ov0-na-IeI" secondAttribute="centerX" id="iYL-tx-PME"/>
                 <constraint firstAttribute="centerX" secondItem="ttG-IB-LiA" secondAttribute="centerX" id="j76-i9-Ou2"/>
                 <constraint firstAttribute="centerY" secondItem="ZiI-rY-GRq" secondAttribute="centerY" constant="140.5" id="pMd-ef-0rt"/>
+                <constraint firstAttribute="centerX" secondItem="qvz-hK-Hv0" secondAttribute="centerX" id="pT3-hs-2ca"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
         </view>

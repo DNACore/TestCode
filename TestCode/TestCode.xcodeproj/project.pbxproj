@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D69863F91B8DB0D400F64908 /* CGAffineTransformTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69863F71B8DB0D400F64908 /* CGAffineTransformTestViewController.m */; };
 		D69863FA1B8DB0D400F64908 /* CGAffineTransformTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69863F81B8DB0D400F64908 /* CGAffineTransformTestViewController.xib */; };
+		D69863FE1B8DBBD200F64908 /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D69863FD1B8DBBD200F64908 /* BlockTest.m */; };
+		D69864031B8EBBF000F64908 /* WKWebViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69864011B8EBBF000F64908 /* WKWebViewTestViewController.m */; };
+		D69864041B8EBBF000F64908 /* WKWebViewTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69864021B8EBBF000F64908 /* WKWebViewTestViewController.xib */; };
 		D6C28F071B8C5633008D230E /* MemoryTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C28F061B8C5633008D230E /* MemoryTool.m */; };
 		D6CDA07F1B86F2FA00ECBFEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA07E1B86F2FA00ECBFEF /* main.m */; };
 		D6CDA0821B86F2FA00ECBFEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA0811B86F2FA00ECBFEF /* AppDelegate.m */; };
@@ -24,6 +27,11 @@
 		D69863F61B8DB0D400F64908 /* CGAffineTransformTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAffineTransformTestViewController.h; sourceTree = "<group>"; };
 		D69863F71B8DB0D400F64908 /* CGAffineTransformTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAffineTransformTestViewController.m; sourceTree = "<group>"; };
 		D69863F81B8DB0D400F64908 /* CGAffineTransformTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CGAffineTransformTestViewController.xib; sourceTree = "<group>"; };
+		D69863FC1B8DBBD200F64908 /* BlockTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTest.h; sourceTree = "<group>"; };
+		D69863FD1B8DBBD200F64908 /* BlockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTest.m; sourceTree = "<group>"; };
+		D69864001B8EBBF000F64908 /* WKWebViewTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewTestViewController.h; sourceTree = "<group>"; };
+		D69864011B8EBBF000F64908 /* WKWebViewTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewTestViewController.m; sourceTree = "<group>"; };
+		D69864021B8EBBF000F64908 /* WKWebViewTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKWebViewTestViewController.xib; sourceTree = "<group>"; };
 		D69EF8AD1B872661000B7976 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D6C28F051B8C5633008D230E /* MemoryTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryTool.h; sourceTree = "<group>"; };
 		D6C28F061B8C5633008D230E /* MemoryTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryTool.m; sourceTree = "<group>"; };
@@ -61,6 +69,25 @@
 				D69863F81B8DB0D400F64908 /* CGAffineTransformTestViewController.xib */,
 			);
 			path = CGAffineTransformTest;
+			sourceTree = "<group>";
+		};
+		D69863FB1B8DBBBF00F64908 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				D69863FC1B8DBBD200F64908 /* BlockTest.h */,
+				D69863FD1B8DBBD200F64908 /* BlockTest.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		D69863FF1B8EBBBF00F64908 /* WKWebViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				D69864001B8EBBF000F64908 /* WKWebViewTestViewController.h */,
+				D69864011B8EBBF000F64908 /* WKWebViewTestViewController.m */,
+				D69864021B8EBBF000F64908 /* WKWebViewTestViewController.xib */,
+			);
+			path = WKWebViewTest;
 			sourceTree = "<group>";
 		};
 		D6C28F041B8C55D7008D230E /* MemoryTool */ = {
@@ -117,9 +144,11 @@
 		D6CDA0A21B86F6B800ECBFEF /* functions */ = {
 			isa = PBXGroup;
 			children = (
+				D69863FB1B8DBBBF00F64908 /* Block */,
 				D69863F51B8DB07D00F64908 /* CGAffineTransformTest */,
 				D6C28F041B8C55D7008D230E /* MemoryTool */,
 				D6CDA0A31B86F70100ECBFEF /* TrafficCount */,
+				D69863FF1B8EBBBF00F64908 /* WKWebViewTest */,
 			);
 			path = functions;
 			sourceTree = "<group>";
@@ -195,6 +224,7 @@
 				D6CDA08D1B86F2FA00ECBFEF /* LaunchScreen.xib in Resources */,
 				D6CDA0A81B86F72D00ECBFEF /* TrafficCountViewController.xib in Resources */,
 				D6CDA08A1B86F2FA00ECBFEF /* Images.xcassets in Resources */,
+				D69864041B8EBBF000F64908 /* WKWebViewTestViewController.xib in Resources */,
 				D69863FA1B8DB0D400F64908 /* CGAffineTransformTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,10 +238,12 @@
 			files = (
 				D6CDA0851B86F2FA00ECBFEF /* ViewController.m in Sources */,
 				D6C28F071B8C5633008D230E /* MemoryTool.m in Sources */,
+				D69864031B8EBBF000F64908 /* WKWebViewTestViewController.m in Sources */,
 				D6CDA0821B86F2FA00ECBFEF /* AppDelegate.m in Sources */,
 				D6CDA0A71B86F72D00ECBFEF /* TrafficCountViewController.m in Sources */,
 				D69863F91B8DB0D400F64908 /* CGAffineTransformTestViewController.m in Sources */,
 				D6CDA07F1B86F2FA00ECBFEF /* main.m in Sources */,
+				D69863FE1B8DBBD200F64908 /* BlockTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
