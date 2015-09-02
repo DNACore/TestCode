@@ -11,6 +11,9 @@
 #import "MemoryTool.h"
 #import "CGAffineTransformTestViewController.h"
 #import "BlockTest.h"
+#import "WKWebViewTestViewController.h"
+#import "iTunesBackupHandlerViewController.h"
+#import "LayerMaskTestViewController.h"
 @interface ViewController (){
     NSArray *functionNameArray;
 }
@@ -28,6 +31,9 @@
                        @"内存占用",
                        @"动画演示 CGAffineTransform",
                        @"Block的使用",
+                       @"WKWebViewTest",
+                       @"iTunes备份处理",
+                       @"LayerMastTest",
                    nil];
     [self.mainTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseCellIdn"];
 }
@@ -77,9 +83,54 @@
             [test blockTest];
         }
             break;
+        case 4:{
+            WKWebViewTestViewController *vc=[[WKWebViewTestViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 5:{
+            iTunesBackupHandlerViewController *vc=[[iTunesBackupHandlerViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 6:{
+            LayerMaskTestViewController *vc=[[LayerMaskTestViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         default:
             break;
     }
+}
+
+#pragma mark - UIScrollView Delegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGFloat yOffset  = scrollView.contentOffset.y;
+
+    CGFloat alpha = fabs(yOffset)/88.f;
+        [self.navigationController.navigationBar setBackgroundImage:[self imageWithColor:[[UIColor orangeColor]colorWithAlphaComponent:alpha]] forBarMetrics:UIBarMetricsDefault];
+}
+
+- (UIImage *)imageWithColor:(UIColor *)color
+{
+    // 描述矩形
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    
+    // 开启位图上下文
+    UIGraphicsBeginImageContext(rect.size);
+    // 获取位图上下文
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    // 使用color演示填充上下文
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    // 渲染上下文
+    CGContextFillRect(context, rect);
+    // 从上下文中获取图片
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // 结束上下文
+    UIGraphicsEndImageContext();
+    return theImage;
 }
 
 
