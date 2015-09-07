@@ -70,7 +70,10 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7L-0w-f74">
-                    <rect key="frame" x="562" y="89" width="30" height="30"/>
+                    <rect key="frame" x="528" y="89" width="64" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="Q0W-50-i3M"/>
+                    </constraints>
                     <state key="normal" title="飞入">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>

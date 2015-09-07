@@ -66,6 +66,11 @@
     [UIView animateWithDuration:.6 delay:0.1 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:0 animations:^{
         testView.transform = CGAffineTransformIdentity;//最终位置
     } completion:NULL];
+// 通过更改frame 实现类似的效果
+//    testView.frame=CGRectMake(400, testView.frame.origin.y, testView.frame.size.width, testView.frame.size.height);
+//    [UIView animateWithDuration:.6 delay:0.1 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:0 animations:^{
+//        testView.frame=CGRectMake(0, testView.frame.origin.y, testView.frame.size.width, testView.frame.size.height);
+//    } completion:NULL];
 
 }
 
