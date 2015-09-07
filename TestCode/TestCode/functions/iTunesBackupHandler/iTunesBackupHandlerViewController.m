@@ -23,10 +23,10 @@
     // Do any additional setup after loading the view from its nib.
     fileManager=[NSFileManager defaultManager];
     documentsDir=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    ManifestmbdbData=[NSData dataWithContentsOfFile:[NSString stringWithFormat:@"%@/Manifest.mbdb",documentsDir]];
-    [self subData];
-    [self getDomain];
-    NSLog(@"%@",[self getDomain]);
+//    ManifestmbdbData=[NSData dataWithContentsOfFile:[NSString stringWithFormat:@"%@/Manifest.mbdb",documentsDir]];
+//    [self subData];
+//    [self getDomain];
+//    NSLog(@"%@",[self getDomain]);
 }
 
 -(void)subData{

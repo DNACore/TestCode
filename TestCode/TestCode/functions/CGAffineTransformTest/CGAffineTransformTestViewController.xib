@@ -60,8 +60,26 @@
                         <action selector="CGAffineTransformRotateAction:" destination="-1" eventType="touchUpInside" id="XCQ-b0-gXk"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnx-nI-kj3">
+                    <rect key="frame" x="193" y="238" width="215" height="30"/>
+                    <state key="normal" title="重置 CGAffineTransformIdentity">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="CGAffineTransformIdentityAction:" destination="-1" eventType="touchUpInside" id="crf-0a-790"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7L-0w-f74">
+                    <rect key="frame" x="562" y="89" width="30" height="30"/>
+                    <state key="normal" title="飞入">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="flyInAction:" destination="-1" eventType="touchUpInside" id="mLV-bp-TUA"/>
+                    </connections>
+                </button>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1LY-cW-59N">
-                    <rect key="frame" x="6" y="415" width="588" height="31"/>
+                    <rect key="frame" x="6" y="562" width="588" height="31"/>
                 </slider>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -69,14 +87,18 @@
                 <constraint firstAttribute="centerY" secondItem="Pbc-Aa-93I" secondAttribute="centerY" constant="-54" id="5Z2-xl-CXT"/>
                 <constraint firstAttribute="centerX" secondItem="Pbc-Aa-93I" secondAttribute="centerX" id="Bb7-Qn-MKY"/>
                 <constraint firstAttribute="centerY" secondItem="Ov0-na-IeI" secondAttribute="centerY" constant="22" id="GwF-w3-Ie8"/>
+                <constraint firstItem="X7L-0w-f74" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="89" id="LeN-nX-EGH"/>
                 <constraint firstItem="1LY-cW-59N" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="N8I-dp-rH6"/>
                 <constraint firstAttribute="centerY" secondItem="qvz-hK-Hv0" secondAttribute="centerY" constant="-92" id="QfT-e7-iME"/>
-                <constraint firstAttribute="centerY" secondItem="1LY-cW-59N" secondAttribute="centerY" constant="-130" id="VpL-yd-3T9"/>
+                <constraint firstAttribute="centerY" secondItem="1LY-cW-59N" secondAttribute="centerY" constant="-277" id="VpL-yd-3T9"/>
                 <constraint firstAttribute="trailing" secondItem="1LY-cW-59N" secondAttribute="trailing" constant="8" id="d6q-I7-ipS"/>
+                <constraint firstAttribute="centerX" secondItem="mnx-nI-kj3" secondAttribute="centerX" constant="-0.5" id="dfB-c0-gDQ"/>
                 <constraint firstAttribute="centerX" secondItem="ZiI-rY-GRq" secondAttribute="centerX" constant="-0.5" id="fQp-Ab-iDr"/>
                 <constraint firstAttribute="centerY" secondItem="ttG-IB-LiA" secondAttribute="centerY" constant="-16" id="gaL-Fd-Mrf"/>
                 <constraint firstAttribute="centerX" secondItem="Ov0-na-IeI" secondAttribute="centerX" id="iYL-tx-PME"/>
                 <constraint firstAttribute="centerX" secondItem="ttG-IB-LiA" secondAttribute="centerX" id="j76-i9-Ou2"/>
+                <constraint firstAttribute="trailing" secondItem="X7L-0w-f74" secondAttribute="trailing" constant="8" id="m56-Fc-kPJ"/>
+                <constraint firstAttribute="centerY" secondItem="mnx-nI-kj3" secondAttribute="centerY" constant="47" id="nod-bj-Y5E"/>
                 <constraint firstAttribute="centerY" secondItem="ZiI-rY-GRq" secondAttribute="centerY" constant="140.5" id="pMd-ef-0rt"/>
                 <constraint firstAttribute="centerX" secondItem="qvz-hK-Hv0" secondAttribute="centerX" id="pT3-hs-2ca"/>
             </constraints>
