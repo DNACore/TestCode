@@ -8,6 +8,8 @@
             <connections>
                 <outlet property="label" destination="AJf-Mq-ODt" id="vCE-1o-rrz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBase" destination="fhj-rm-Klo" id="maA-bG-yLW"/>
+                <outlet property="viewBasebeyond" destination="dl3-pB-1q4" id="ZGo-4o-9rh"/>
                 <outlet property="viewGreen" destination="29S-wa-ORc" id="xgO-gf-vMi"/>
                 <outlet property="viewOrange" destination="KFf-bz-CB7" id="XxR-hl-m9a"/>
                 <outlet property="viewYellow" destination="iqh-Nq-adK" id="Uwz-PP-BHi"/>
@@ -57,6 +59,21 @@
                     </view>
                     <blurEffect style="light"/>
                 </visualEffectView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fhj-rm-Klo" customClass="DragView">
+                    <rect key="frame" x="63" y="64" width="300" height="300"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dl3-pB-1q4" customClass="DragView">
+                            <rect key="frame" x="168" y="160" width="60" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="30"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.41401110200000002" green="0.76755242599999995" blue="0.99313836349999995" alpha="1" colorSpace="calibratedRGB"/>
             <point key="canvasLocation" x="450" y="334"/>

@@ -15,8 +15,12 @@
 //    [self type2];
     [self type3];
     [self type4];
-    [self aBlock:^(int result) {
-        NSLog(@"返回值：%i",result);
+    [self aBlock:^(int param) {
+        NSLog(@"block的参数值：%i",param);
+    }];
+    [self bBlock:^int(int param) {
+        NSLog(@"block的参数值：%i",param);
+        return param;
     }];
 }
 
@@ -55,8 +59,13 @@
     NSLog(@"result=%d", result);
 }
 
--(void)aBlock:(void(^)(int result))block{
+-(void)aBlock:(void(^)(int param))block{
     block(5*5);
+}
+
+-(void)bBlock:(int(^)(int param))block{
+   int blockResult = block(6*5);
+    NSLog(@"blockResult = %i",blockResult);
 }
 
 @end

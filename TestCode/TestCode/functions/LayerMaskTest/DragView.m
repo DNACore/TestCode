@@ -74,4 +74,9 @@
 //    CGContextFillPath(c);
 //}
 
+//替换系统默认layer这个方法由系统自动调用来创建layer
++ (Class)layerClass {
+    return [CAGradientLayer class];
+}
+
 @end

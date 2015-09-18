@@ -21,12 +21,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    fileManager=[NSFileManager defaultManager];
-    documentsDir=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+//    fileManager=[NSFileManager defaultManager];
+//    documentsDir=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 //    ManifestmbdbData=[NSData dataWithContentsOfFile:[NSString stringWithFormat:@"%@/Manifest.mbdb",documentsDir]];
 //    [self subData];
 //    [self getDomain];
 //    NSLog(@"%@",[self getDomain]);
+    [self asyncInSync];
+}
+
+//同步套异步 为什么先打印主线程再打印主线程的耗时操作
+-(void)asyncInSync{
+    dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //主线程更新界面
+            for (int i = 0; i<100; i++) {
+                NSLog(@"🌲主线程耗时操作：%i",i);
+            }
+        });
+        for (int i = 0; i<100; i++) {
+            NSLog(@"❤️副线程耗时操作：%i",i);
+        }
+    });
+    for (int i = 0; i<100; i++) {
+        NSLog(@"😄主线程耗时操作：%i",i);
+    }
 }
 
 -(void)subData{

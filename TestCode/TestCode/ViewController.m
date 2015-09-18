@@ -14,6 +14,9 @@
 #import "WKWebViewTestViewController.h"
 #import "iTunesBackupHandlerViewController.h"
 #import "LayerMaskTestViewController.h"
+#import "ParentViewController.h"
+#import "IDsViewController.h"
+#import "DrawRectTestViewController.h"
 @interface ViewController (){
     NSArray *functionNameArray;
 }
@@ -34,6 +37,9 @@
                        @"WKWebViewTest",
                        @"iTunes备份处理",
                        @"LayerMastTest",
+                       @"AddChildVCTest",
+                       @"IDs",
+                       @"- (void)drawRect:(CGRect)rect",
                    nil];
     [self.mainTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseCellIdn"];
 }
@@ -95,6 +101,21 @@
             break;
         case 6:{
             LayerMaskTestViewController *vc=[[LayerMaskTestViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 7:{
+            ParentViewController *vc=[[ParentViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 8:{
+            IDsViewController *vc=[[IDsViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 9:{
+            DrawRectTestViewController *vc=[[DrawRectTestViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

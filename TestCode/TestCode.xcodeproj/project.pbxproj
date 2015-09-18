@@ -17,7 +17,17 @@
 		D69863FA1B8DB0D400F64908 /* CGAffineTransformTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69863F81B8DB0D400F64908 /* CGAffineTransformTestViewController.xib */; };
 		D69863FE1B8DBBD200F64908 /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D69863FD1B8DBBD200F64908 /* BlockTest.m */; };
 		D69864031B8EBBF000F64908 /* WKWebViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69864011B8EBBF000F64908 /* WKWebViewTestViewController.m */; };
+		D6AF1FE01BA674FD00229224 /* IDsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF1FDE1BA674FD00229224 /* IDsViewController.m */; };
+		D6AF1FE11BA674FD00229224 /* IDsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6AF1FDF1BA674FD00229224 /* IDsViewController.xib */; };
 		D6C28F071B8C5633008D230E /* MemoryTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C28F061B8C5633008D230E /* MemoryTool.m */; };
+		D6C9B11F1BA040EF00168941 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9B11D1BA040EF00168941 /* ParentViewController.m */; };
+		D6C9B1201BA040EF00168941 /* ParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C9B11E1BA040EF00168941 /* ParentViewController.xib */; };
+		D6C9B1291BA0411300168941 /* ChildViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9B1271BA0411300168941 /* ChildViewController2.m */; };
+		D6C9B12A1BA0411300168941 /* ChildViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C9B1281BA0411300168941 /* ChildViewController2.xib */; };
+		D6C9B12E1BA0412500168941 /* ChildViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9B12C1BA0412500168941 /* ChildViewController3.m */; };
+		D6C9B12F1BA0412500168941 /* ChildViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C9B12D1BA0412500168941 /* ChildViewController3.xib */; };
+		D6C9B1381BA0485B00168941 /* ChildViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9B1361BA0485B00168941 /* ChildViewController1.m */; };
+		D6C9B1391BA0485B00168941 /* ChildViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C9B1371BA0485B00168941 /* ChildViewController1.xib */; };
 		D6CDA07F1B86F2FA00ECBFEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA07E1B86F2FA00ECBFEF /* main.m */; };
 		D6CDA0821B86F2FA00ECBFEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA0811B86F2FA00ECBFEF /* AppDelegate.m */; };
 		D6CDA0851B86F2FA00ECBFEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA0841B86F2FA00ECBFEF /* ViewController.m */; };
@@ -26,6 +36,9 @@
 		D6CDA08D1B86F2FA00ECBFEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CDA08B1B86F2FA00ECBFEF /* LaunchScreen.xib */; };
 		D6CDA0A71B86F72D00ECBFEF /* TrafficCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA0A51B86F72C00ECBFEF /* TrafficCountViewController.m */; };
 		D6CDA0A81B86F72D00ECBFEF /* TrafficCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CDA0A61B86F72C00ECBFEF /* TrafficCountViewController.xib */; };
+		D6F64D141BABA13F00CF9E09 /* DrawRectTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F64D121BABA13F00CF9E09 /* DrawRectTestViewController.m */; };
+		D6F64D151BABA13F00CF9E09 /* DrawRectTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F64D131BABA13F00CF9E09 /* DrawRectTestViewController.xib */; };
+		D6F64D181BABA15B00CF9E09 /* DrawRectTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F64D171BABA15B00CF9E09 /* DrawRectTestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,8 +60,23 @@
 		D69864001B8EBBF000F64908 /* WKWebViewTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewTestViewController.h; sourceTree = "<group>"; };
 		D69864011B8EBBF000F64908 /* WKWebViewTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewTestViewController.m; sourceTree = "<group>"; };
 		D69EF8AD1B872661000B7976 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D6AF1FDD1BA674FD00229224 /* IDsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDsViewController.h; sourceTree = "<group>"; };
+		D6AF1FDE1BA674FD00229224 /* IDsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDsViewController.m; sourceTree = "<group>"; };
+		D6AF1FDF1BA674FD00229224 /* IDsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDsViewController.xib; sourceTree = "<group>"; };
 		D6C28F051B8C5633008D230E /* MemoryTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryTool.h; sourceTree = "<group>"; };
 		D6C28F061B8C5633008D230E /* MemoryTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryTool.m; sourceTree = "<group>"; };
+		D6C9B11C1BA040EF00168941 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
+		D6C9B11D1BA040EF00168941 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
+		D6C9B11E1BA040EF00168941 /* ParentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParentViewController.xib; sourceTree = "<group>"; };
+		D6C9B1261BA0411300168941 /* ChildViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController2.h; sourceTree = "<group>"; };
+		D6C9B1271BA0411300168941 /* ChildViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController2.m; sourceTree = "<group>"; };
+		D6C9B1281BA0411300168941 /* ChildViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildViewController2.xib; sourceTree = "<group>"; };
+		D6C9B12B1BA0412500168941 /* ChildViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController3.h; sourceTree = "<group>"; };
+		D6C9B12C1BA0412500168941 /* ChildViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController3.m; sourceTree = "<group>"; };
+		D6C9B12D1BA0412500168941 /* ChildViewController3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildViewController3.xib; sourceTree = "<group>"; };
+		D6C9B1351BA0485B00168941 /* ChildViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController1.h; sourceTree = "<group>"; };
+		D6C9B1361BA0485B00168941 /* ChildViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController1.m; sourceTree = "<group>"; };
+		D6C9B1371BA0485B00168941 /* ChildViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildViewController1.xib; sourceTree = "<group>"; };
 		D6CDA0791B86F2FA00ECBFEF /* TestCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CDA07D1B86F2FA00ECBFEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6CDA07E1B86F2FA00ECBFEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -62,6 +90,11 @@
 		D6CDA0A41B86F72C00ECBFEF /* TrafficCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficCountViewController.h; sourceTree = "<group>"; };
 		D6CDA0A51B86F72C00ECBFEF /* TrafficCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficCountViewController.m; sourceTree = "<group>"; };
 		D6CDA0A61B86F72C00ECBFEF /* TrafficCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficCountViewController.xib; sourceTree = "<group>"; };
+		D6F64D111BABA13F00CF9E09 /* DrawRectTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectTestViewController.h; sourceTree = "<group>"; };
+		D6F64D121BABA13F00CF9E09 /* DrawRectTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectTestViewController.m; sourceTree = "<group>"; };
+		D6F64D131BABA13F00CF9E09 /* DrawRectTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawRectTestViewController.xib; sourceTree = "<group>"; };
+		D6F64D161BABA15B00CF9E09 /* DrawRectTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectTestView.h; sourceTree = "<group>"; };
+		D6F64D171BABA15B00CF9E09 /* DrawRectTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectTestView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +160,16 @@
 			path = WKWebViewTest;
 			sourceTree = "<group>";
 		};
+		D6AF1FDC1BA674E600229224 /* IDs */ = {
+			isa = PBXGroup;
+			children = (
+				D6AF1FDD1BA674FD00229224 /* IDsViewController.h */,
+				D6AF1FDE1BA674FD00229224 /* IDsViewController.m */,
+				D6AF1FDF1BA674FD00229224 /* IDsViewController.xib */,
+			);
+			path = IDs;
+			sourceTree = "<group>";
+		};
 		D6C28F041B8C55D7008D230E /* MemoryTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +177,25 @@
 				D6C28F061B8C5633008D230E /* MemoryTool.m */,
 			);
 			path = MemoryTool;
+			sourceTree = "<group>";
+		};
+		D6C9B11B1BA040D000168941 /* AddChildVCTest */ = {
+			isa = PBXGroup;
+			children = (
+				D6C9B11C1BA040EF00168941 /* ParentViewController.h */,
+				D6C9B11D1BA040EF00168941 /* ParentViewController.m */,
+				D6C9B11E1BA040EF00168941 /* ParentViewController.xib */,
+				D6C9B1261BA0411300168941 /* ChildViewController2.h */,
+				D6C9B1271BA0411300168941 /* ChildViewController2.m */,
+				D6C9B1281BA0411300168941 /* ChildViewController2.xib */,
+				D6C9B12B1BA0412500168941 /* ChildViewController3.h */,
+				D6C9B12C1BA0412500168941 /* ChildViewController3.m */,
+				D6C9B12D1BA0412500168941 /* ChildViewController3.xib */,
+				D6C9B1351BA0485B00168941 /* ChildViewController1.h */,
+				D6C9B1361BA0485B00168941 /* ChildViewController1.m */,
+				D6C9B1371BA0485B00168941 /* ChildViewController1.xib */,
+			);
+			path = AddChildVCTest;
 			sourceTree = "<group>";
 		};
 		D6CDA0701B86F2FA00ECBFEF = {
@@ -188,6 +250,9 @@
 				D6C28F041B8C55D7008D230E /* MemoryTool */,
 				D6CDA0A31B86F70100ECBFEF /* TrafficCount */,
 				D69863FF1B8EBBBF00F64908 /* WKWebViewTest */,
+				D6C9B11B1BA040D000168941 /* AddChildVCTest */,
+				D6AF1FDC1BA674E600229224 /* IDs */,
+				D6F64D101BABA11500CF9E09 /* DrawRectTest */,
 			);
 			path = functions;
 			sourceTree = "<group>";
@@ -200,6 +265,19 @@
 				D6CDA0A61B86F72C00ECBFEF /* TrafficCountViewController.xib */,
 			);
 			path = TrafficCount;
+			sourceTree = "<group>";
+		};
+		D6F64D101BABA11500CF9E09 /* DrawRectTest */ = {
+			isa = PBXGroup;
+			children = (
+				D6F64D111BABA13F00CF9E09 /* DrawRectTestViewController.h */,
+				D6F64D121BABA13F00CF9E09 /* DrawRectTestViewController.m */,
+				D6F64D131BABA13F00CF9E09 /* DrawRectTestViewController.xib */,
+				D6F64D161BABA15B00CF9E09 /* DrawRectTestView.h */,
+				D6F64D171BABA15B00CF9E09 /* DrawRectTestView.m */,
+			);
+			name = DrawRectTest;
+			path = IDs/DrawRectTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,11 +338,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6CDA0881B86F2FA00ECBFEF /* Main.storyboard in Resources */,
+				D6AF1FE11BA674FD00229224 /* IDsViewController.xib in Resources */,
 				D6CDA08D1B86F2FA00ECBFEF /* LaunchScreen.xib in Resources */,
+				D6C9B1201BA040EF00168941 /* ParentViewController.xib in Resources */,
 				D6CDA0A81B86F72D00ECBFEF /* TrafficCountViewController.xib in Resources */,
 				D62B795B1B969EFC008E728E /* LayerMaskTestViewController.xib in Resources */,
+				D6C9B12A1BA0411300168941 /* ChildViewController2.xib in Resources */,
 				D6CDA08A1B86F2FA00ECBFEF /* Images.xcassets in Resources */,
+				D6C9B12F1BA0412500168941 /* ChildViewController3.xib in Resources */,
 				D69863FA1B8DB0D400F64908 /* CGAffineTransformTestViewController.xib in Resources */,
+				D6C9B1391BA0485B00168941 /* ChildViewController1.xib in Resources */,
+				D6F64D151BABA13F00CF9E09 /* DrawRectTestViewController.xib in Resources */,
 				D62B79551B953214008E728E /* iTunesBackupHandlerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,13 +360,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C9B1291BA0411300168941 /* ChildViewController2.m in Sources */,
 				D62B79541B953214008E728E /* iTunesBackupHandlerViewController.m in Sources */,
 				D6CDA0851B86F2FA00ECBFEF /* ViewController.m in Sources */,
+				D6C9B11F1BA040EF00168941 /* ParentViewController.m in Sources */,
+				D6AF1FE01BA674FD00229224 /* IDsViewController.m in Sources */,
 				D6C28F071B8C5633008D230E /* MemoryTool.m in Sources */,
+				D6C9B1381BA0485B00168941 /* ChildViewController1.m in Sources */,
 				D69864031B8EBBF000F64908 /* WKWebViewTestViewController.m in Sources */,
 				D6CDA0821B86F2FA00ECBFEF /* AppDelegate.m in Sources */,
+				D6C9B12E1BA0412500168941 /* ChildViewController3.m in Sources */,
+				D6F64D181BABA15B00CF9E09 /* DrawRectTestView.m in Sources */,
 				D6CDA0A71B86F72D00ECBFEF /* TrafficCountViewController.m in Sources */,
 				D69863F91B8DB0D400F64908 /* CGAffineTransformTestViewController.m in Sources */,
+				D6F64D141BABA13F00CF9E09 /* DrawRectTestViewController.m in Sources */,
 				D62B79611B96CBD1008E728E /* DragVisualEffectView.m in Sources */,
 				D6CDA07F1B86F2FA00ECBFEF /* main.m in Sources */,
 				D62B795A1B969EFC008E728E /* LayerMaskTestViewController.m in Sources */,
