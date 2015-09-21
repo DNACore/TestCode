@@ -163,7 +163,7 @@
      *  completion              转换完成
      */
     
-    [self transitionFromViewController:oldController toViewController:newController duration:0.5 options:UIViewAnimationOptionTransitionFlipFromLeft animations:nil completion:^(BOOL finished) {
+    [self transitionFromViewController:oldController toViewController:newController duration:0.5 options:UIViewAnimationOptionTransitionFlipFromTop animations:nil completion:^(BOOL finished) {
             self.currentVC = newController;
     }];
 }

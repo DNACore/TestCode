@@ -17,6 +17,7 @@
 #import "ParentViewController.h"
 #import "IDsViewController.h"
 #import "DrawRectTestViewController.h"
+#import "BluetoothViewController.h"
 @interface ViewController (){
     NSArray *functionNameArray;
 }
@@ -40,6 +41,7 @@
                        @"AddChildVCTest",
                        @"IDs",
                        @"- (void)drawRect:(CGRect)rect",
+                       @"蓝牙测试",
                    nil];
     [self.mainTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseCellIdn"];
 }
@@ -116,6 +118,11 @@
             break;
         case 9:{
             DrawRectTestViewController *vc=[[DrawRectTestViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 10:{
+            BluetoothViewController *vc=[[BluetoothViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
