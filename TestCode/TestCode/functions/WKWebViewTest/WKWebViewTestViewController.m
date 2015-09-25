@@ -46,11 +46,13 @@
     [webViewTest loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]]];
     [self.view addSubview:webViewTest];
     
-    [self progressLayer];
+//    [self progressLayer];
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     [webViewTest stopLoading];
+    [getProgressTimer invalidate];
+    [clayer removeAllAnimations];
     [super viewWillDisappear:animated];
 }
 

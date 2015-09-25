@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScrollViewTestViewController">
+            <connections>
+                <outlet property="ListView" destination="2Iq-Np-nvu" id="45m-lE-gEp"/>
+                <outlet property="detailViewBottomC" destination="FfU-4X-TSg" id="cSh-3H-56t"/>
+                <outlet property="detailViewTopC" destination="8YY-zK-Bh1" id="Egr-As-h3V"/>
+                <outlet property="detailWebview" destination="SY9-Fn-rdW" id="3Xs-ZS-717"/>
+                <outlet property="listViewBottomC" destination="z9S-U6-p4k" id="Rbt-bo-Q55"/>
+                <outlet property="listViewTopC" destination="dlw-Ka-Y6M" id="9ex-Fm-40w"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2Iq-Np-nvu">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="nXB-C7-IbR"/>
+                        <outlet property="delegate" destination="-1" id="eUL-4x-KrW"/>
+                    </connections>
+                </tableView>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SY9-Fn-rdW">
+                    <rect key="frame" x="0.0" y="600" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SY9-Fn-rdW" secondAttribute="trailing" id="7OO-Nr-h8i"/>
+                <constraint firstItem="SY9-Fn-rdW" firstAttribute="top" secondItem="2Iq-Np-nvu" secondAttribute="bottom" id="8YY-zK-Bh1"/>
+                <constraint firstAttribute="bottom" secondItem="SY9-Fn-rdW" secondAttribute="bottom" constant="-600" id="FfU-4X-TSg"/>
+                <constraint firstItem="SY9-Fn-rdW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Y0e-wp-byI"/>
+                <constraint firstItem="2Iq-Np-nvu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dlw-Ka-Y6M"/>
+                <constraint firstItem="2Iq-Np-nvu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m3Q-Cf-bnx"/>
+                <constraint firstAttribute="trailing" secondItem="2Iq-Np-nvu" secondAttribute="trailing" id="qH9-up-Jhz"/>
+                <constraint firstAttribute="bottom" secondItem="2Iq-Np-nvu" secondAttribute="bottom" id="z9S-U6-p4k"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+</document>

@@ -36,6 +36,8 @@
 		D6A0B82F1BAFEC1A00229CBD /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A0B81A1BAFEC1A00229CBD /* UIScrollView+MJExtension.m */; };
 		D6A0B8301BAFEC1A00229CBD /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A0B81C1BAFEC1A00229CBD /* UIScrollView+MJRefresh.m */; };
 		D6A0B8311BAFEC1A00229CBD /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A0B81E1BAFEC1A00229CBD /* UIView+MJExtension.m */; };
+		D6A0B8361BAFEC8900229CBD /* ScrollViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A0B8341BAFEC8900229CBD /* ScrollViewTestViewController.m */; };
+		D6A0B8371BAFEC8900229CBD /* ScrollViewTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A0B8351BAFEC8900229CBD /* ScrollViewTestViewController.xib */; };
 		D6AF1FE01BA674FD00229224 /* IDsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF1FDE1BA674FD00229224 /* IDsViewController.m */; };
 		D6AF1FE11BA674FD00229224 /* IDsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6AF1FDF1BA674FD00229224 /* IDsViewController.xib */; };
 		D6C28F071B8C5633008D230E /* MemoryTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C28F061B8C5633008D230E /* MemoryTool.m */; };
@@ -119,6 +121,9 @@
 		D6A0B81C1BAFEC1A00229CBD /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		D6A0B81D1BAFEC1A00229CBD /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		D6A0B81E1BAFEC1A00229CBD /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		D6A0B8331BAFEC8900229CBD /* ScrollViewTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewTestViewController.h; sourceTree = "<group>"; };
+		D6A0B8341BAFEC8900229CBD /* ScrollViewTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewTestViewController.m; sourceTree = "<group>"; };
+		D6A0B8351BAFEC8900229CBD /* ScrollViewTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewTestViewController.xib; sourceTree = "<group>"; };
 		D6AF1FDD1BA674FD00229224 /* IDsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDsViewController.h; sourceTree = "<group>"; };
 		D6AF1FDE1BA674FD00229224 /* IDsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDsViewController.m; sourceTree = "<group>"; };
 		D6AF1FDF1BA674FD00229224 /* IDsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDsViewController.xib; sourceTree = "<group>"; };
@@ -323,6 +328,16 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		D6A0B8321BAFEC6D00229CBD /* ScrollViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				D6A0B8331BAFEC8900229CBD /* ScrollViewTestViewController.h */,
+				D6A0B8341BAFEC8900229CBD /* ScrollViewTestViewController.m */,
+				D6A0B8351BAFEC8900229CBD /* ScrollViewTestViewController.xib */,
+			);
+			path = ScrollViewTest;
+			sourceTree = "<group>";
+		};
 		D6AF1FDC1BA674E600229224 /* IDs */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,6 +433,7 @@
 				D6AF1FDC1BA674E600229224 /* IDs */,
 				D6F64D101BABA11500CF9E09 /* DrawRectTest */,
 				D6F64D191BABE17000CF9E09 /* Bluetooth */,
+				D6A0B8321BAFEC6D00229CBD /* ScrollViewTest */,
 			);
 			path = functions;
 			sourceTree = "<group>";
@@ -516,6 +532,7 @@
 				D6AF1FE11BA674FD00229224 /* IDsViewController.xib in Resources */,
 				D6CDA08D1B86F2FA00ECBFEF /* LaunchScreen.xib in Resources */,
 				D6C9B1201BA040EF00168941 /* ParentViewController.xib in Resources */,
+				D6A0B8371BAFEC8900229CBD /* ScrollViewTestViewController.xib in Resources */,
 				D6CDA0A81B86F72D00ECBFEF /* TrafficCountViewController.xib in Resources */,
 				D62B795B1B969EFC008E728E /* LayerMaskTestViewController.xib in Resources */,
 				D6C9B12A1BA0411300168941 /* ChildViewController2.xib in Resources */,
@@ -562,6 +579,7 @@
 				D6A0B82B1BAFEC1A00229CBD /* MJRefreshNormalHeader.m in Sources */,
 				D6A0B8261BAFEC1A00229CBD /* MJRefreshAutoStateFooter.m in Sources */,
 				D6A0B8201BAFEC1A00229CBD /* MJRefreshBackFooter.m in Sources */,
+				D6A0B8361BAFEC8900229CBD /* ScrollViewTestViewController.m in Sources */,
 				D6A0B82A1BAFEC1A00229CBD /* MJRefreshGifHeader.m in Sources */,
 				D69863F91B8DB0D400F64908 /* CGAffineTransformTestViewController.m in Sources */,
 				D6A0B82E1BAFEC1A00229CBD /* MJRefreshConst.m in Sources */,

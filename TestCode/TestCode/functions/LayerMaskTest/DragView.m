@@ -26,7 +26,7 @@
     //保存触摸起始点位置
     CGPoint point = [[touches anyObject] locationInView:self];
     startPoint = point;
-    [self.superview bringSubviewToFront:self];
+    //[self.superview bringSubviewToFront:self];
 }
 
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
