@@ -20,7 +20,7 @@
     }];
     [self bBlock:^int(int param) {
         NSLog(@"block的参数值：%i",param);
-        return param;
+        return param+10;
     }];
 }
 
@@ -37,7 +37,7 @@
     int (^square)(int);
     //将Block实体指定给square
     square = ^(int a){ return a*a ; };
-    //调用方法，感觉是是不是很像function的用法？
+    //调用方法，感觉是是不是很像 function函数 的用法？
     int result = square(5);
     NSLog(@"%d", result);
 }

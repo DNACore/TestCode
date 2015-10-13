@@ -26,7 +26,7 @@
     WKWebView *webViewTest;
     NSTimer *getProgressTimer;
     UIProgressView *loadProgress;
-    CAGradientLayer *clayer;
+    
 }
 
 @end
@@ -43,16 +43,16 @@
     
     webViewTest=[[WKWebView alloc]initWithFrame:CGRectMake(0, 0, 375, 667)];
     webViewTest.navigationDelegate=self;
-    [webViewTest loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]]];
+    [webViewTest loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
     [self.view addSubview:webViewTest];
     
-//    [self progressLayer];
+//
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     [webViewTest stopLoading];
     [getProgressTimer invalidate];
-    [clayer removeAllAnimations];
+    
     [super viewWillDisappear:animated];
 }
 
@@ -75,55 +75,6 @@
     loadProgress.progress=[webViewTest estimatedProgress];
 }
 
-#pragma mark - 加载进度条
--(void)progressLayer{
-    // Use a horizontal gradient
-    CAGradientLayer *layer = [CAGradientLayer layer];
-    clayer=layer;
-    layer.frame=CGRectMake(0, 80, 320, 40);
-    [layer setStartPoint:CGPointMake(0.0, 0.5)];
-    [layer setEndPoint:CGPointMake(1.0, 0.5)];
-    
-    // Create colors using hues in +5 increments
-    NSMutableArray *colors = [NSMutableArray array];
-    for (NSInteger hue = 0; hue <= 360; hue += 5) {
-        
-        UIColor *color;
-        color = [UIColor colorWithHue:1.0 * hue / 360.0
-                           saturation:1.0
-                           brightness:1.0
-                                alpha:1.0];
-        [colors addObject:(id)[color CGColor]];
-    }
-    [layer setColors:[NSArray arrayWithArray:colors]];
-    [self.view.layer addSublayer:layer];
-    [self performAnimation:clayer];
-}
-
-- (void)performAnimation:(CAGradientLayer *)layer {
-    // Move the last color in the array to the front
-    // shifting all the other colors.
-    NSMutableArray *mutable = [[layer colors] mutableCopy];
-    [mutable insertObject:[mutable lastObject] atIndex:0];
-    [mutable removeLastObject];
-    
-    // Update the colors on the model layer
-    [layer setColors:mutable];
-    
-    // Create an animation to slowly move the gradient left to right.
-    CABasicAnimation *animation;
-    animation = [CABasicAnimation animationWithKeyPath:@"colors"];
-    [animation setToValue:mutable];
-    [animation setDuration:0.01];
-    [animation setRemovedOnCompletion:YES];
-    [animation setFillMode:kCAFillModeForwards];
-    [animation setDelegate:self];
-    [layer addAnimation:animation forKey:@"animateGradient"];
-}
-
-- (void)animationDidStop:(CAAnimation *)animation finished:(BOOL)flag {
-    [self performAnimation:clayer];
-}
 
 
 #pragma mark - WKNavigationDelegate
