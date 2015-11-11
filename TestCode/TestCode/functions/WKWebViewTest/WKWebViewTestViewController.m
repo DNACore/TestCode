@@ -77,20 +77,31 @@
 
 -(void)initToolBar{
     UIToolbar *bottomBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, webViewTest.frame.size.height, self.view.frame.size.width, 44)];
-    UIBarButtonItem *backButton=[[UIBarButtonItem alloc]initWithTitle:@"⬅️"
+    UIBarButtonItem *goBackButton=[[UIBarButtonItem alloc]initWithTitle:@"⬅️"
                                                                 style:UIBarButtonItemStyleDone
                                                                target:self
-                                                               action:@selector(back)];
-    [bottomBar setItems:@[backButton] animated:NO];
+                                                               action:@selector(goBack)];
+    UIBarButtonItem *goForwardButton=[[UIBarButtonItem alloc]initWithTitle:@"➡️"
+                                                                style:UIBarButtonItemStyleDone
+                                                               target:self
+                                                               action:@selector(goForward)];
+    [bottomBar setItems:@[goBackButton,goForwardButton] animated:NO];
     [self.view addSubview:bottomBar];
 }
 
 #pragma mark - 网页控制
--(void)back{
+-(void)goBack{
     if ([webViewTest canGoBack]) {
         [webViewTest goBack];
     }
 }
+
+-(void)goForward{
+    if ([webViewTest canGoForward]) {
+        [webViewTest goForward];
+    }
+}
+
 
 //获取页面加载进度
 -(void)getLoadProgress{
