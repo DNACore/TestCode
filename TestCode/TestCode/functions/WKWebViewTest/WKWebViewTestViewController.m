@@ -36,16 +36,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    loadProgress =[[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleBar];
-    loadProgress.frame=CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y+64, self.view.frame.size.width, 2);
-    loadProgress.trackTintColor=[UIColor orangeColor];
-    loadProgress.progressTintColor=[UIColor blueColor];
-    
-    webViewTest=[[WKWebView alloc]initWithFrame:CGRectMake(0, 0, 375, 667)];
-    webViewTest.navigationDelegate=self;
-    [webViewTest loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
-    [self.view addSubview:webViewTest];
-    
+    [self initWebView];
+    [self initToolBar];
 //
 }
 
@@ -68,6 +60,36 @@
 
 -(void)dealloc{
     NSLog(@"%s",__func__);
+}
+
+-(void)initWebView{
+    loadProgress =[[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleBar];
+    loadProgress.frame=CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y+64, self.view.frame.size.width, 2);
+    loadProgress.trackTintColor=[UIColor orangeColor];
+    loadProgress.progressTintColor=[UIColor blueColor];
+    
+    webViewTest=[[WKWebView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-44)];
+    webViewTest.navigationDelegate=self;
+    [webViewTest loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com/"]]];
+//    [webViewTest loadHTMLString:@"<p><a target=\"_blank\" href=\"http://www.btbook.net\">book</a></p>" baseURL:[NSURL URLWithString:@"http://www.home.com"]];
+    [self.view addSubview:webViewTest];
+}
+
+-(void)initToolBar{
+    UIToolbar *bottomBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, webViewTest.frame.size.height, self.view.frame.size.width, 44)];
+    UIBarButtonItem *backButton=[[UIBarButtonItem alloc]initWithTitle:@"⬅️"
+                                                                style:UIBarButtonItemStyleDone
+                                                               target:self
+                                                               action:@selector(back)];
+    [bottomBar setItems:@[backButton] animated:NO];
+    [self.view addSubview:bottomBar];
+}
+
+#pragma mark - 网页控制
+-(void)back{
+    if ([webViewTest canGoBack]) {
+        [webViewTest goBack];
+    }
 }
 
 //获取页面加载进度

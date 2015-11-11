@@ -137,8 +137,8 @@ int getGprs3GFlowIOBytes() {//C函数命名方式
             struct if_data *if_data = (struct if_data *)ifa->ifa_data;
             iBytes += if_data->ifi_ibytes;
             oBytes += if_data->ifi_obytes;
-            //            NSLog(@"%s :iBytes is %d, oBytes is %d",
-            //                  ifa->ifa_name, iBytes, oBytes);
+//                        NSLog(@"%s :iBytes is %u, oBytes is %u",
+//                              ifa->ifa_name, iBytes, oBytes);
             
         }
         

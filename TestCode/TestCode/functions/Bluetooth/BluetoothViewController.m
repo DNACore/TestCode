@@ -9,7 +9,7 @@
 #import "BluetoothViewController.h"
 #import <CoreBluetooth/CoreBluetooth.h>
 
-@interface BluetoothViewController ()<CBCentralManagerDelegate>
+@interface BluetoothViewController ()<CBCentralManagerDelegate,CBPeripheralDelegate>
 
 @end
 
@@ -41,6 +41,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)dealloc{
+    LogFuncPrint;
+}
+
 /*
 #pragma mark - Navigation
 
@@ -51,7 +55,7 @@
 }
 */
 
-#pragma mark - 蓝牙回调
+#pragma mark - 蓝牙扫描回调
 //蓝牙扫描状态更新
 -(void)centralManagerDidUpdateState:(CBCentralManager *)central{
     
@@ -90,7 +94,9 @@
 //扫描到设备会进入方法
 -(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI{
     
-    NSLog(@"扫描到设备:%@ 信号强度RSSI:%@ 支持的服务:%@",peripheral.name,RSSI,peripheral.services);
+    NSLog(@"扫描到设备:%@ 设备名:%@ 信号强度RSSI:%@ 支持的服务:%@",peripheral,peripheral.name,RSSI,peripheral.services);
+//    peripheral.delegate=self;//设置蓝牙设备方法回调
+//    [peripheral discoverServices:nil];
     //接下来可以连接设备
     
 }
@@ -113,7 +119,6 @@
 //    
 //}
 
-
 //连接到Peripherals-成功
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral
 {
@@ -132,6 +137,11 @@
     
 }
 
+#pragma mark - CBPeripheralDelegate 蓝牙设备方法回调
+//连接上设备之后执行[peripheral discoverServices:nil];后会进入此回调
+- (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(nullable NSError *)error{
+    NSLog(@"设备名称：%@，发现的服务：%@",peripheral.name,peripheral.services);
+}
 
 
 @end
