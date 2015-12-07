@@ -8,6 +8,8 @@
 
 #import "ScrollViewTestViewController.h"
 #import "MJRefresh.h"
+#import "FilteredWebCache.h"
+
 @interface ScrollViewTestViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *ListView;
 @property (weak, nonatomic) IBOutlet UIWebView *detailWebview;
@@ -23,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self initWebCache];
+
     [self.ListView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 //添加上拉刷新控件
 
@@ -56,6 +60,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)initWebCache{//使用自建的缓存替代系统默认的
+    NSString *cachePath=[NSString stringWithFormat:@"%@/selfCache/",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject]];
+    static NSUInteger discCapacity = 10*1024*1024;
+    static NSUInteger memoryCapacity = 512*1024;
+    FilteredWebCache *cache=[[FilteredWebCache alloc]initWithMemoryCapacity:memoryCapacity diskCapacity:discCapacity diskPath:cachePath];
+    [NSURLCache setSharedURLCache:cache];
+}
 
 #pragma mark - UITableViewDataSource
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

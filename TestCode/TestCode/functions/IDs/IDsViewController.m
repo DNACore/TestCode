@@ -33,6 +33,7 @@
     [self addTextView];
     
     [self progressLayer];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -96,7 +97,7 @@
 //        float keyBoardEndHeight=keyboardEndFrame.size.height;
         [UIView animateWithDuration:0.25 animations:^{
             textFieldBottonC.constant=667.0-keyboardEndOriginY;
-            textField.frame=CGRectMake(0, textFieldBottonC.constant+textField.frame.size.height, textField.frame.size.width, textField.frame.size.height);
+//            textField.frame=CGRectMake(0, textFieldBottonC.constant+textField.frame.size.height, textField.frame.size.width, textField.frame.size.height);
         }];
     }
 }
@@ -154,6 +155,5 @@
 - (void)animationDidStop:(CAAnimation *)animation finished:(BOOL)flag {
     [self performAnimation:clayer];
 }
-
 
 @end

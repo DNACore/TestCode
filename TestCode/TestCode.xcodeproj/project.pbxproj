@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D61802481BC8F770004C7248 /* CollectionCellTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D61802471BC8F770004C7248 /* CollectionCellTestViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D61802481BC8F770004C7248 /* CollectionCellTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D61802471BC8F770004C7248 /* CollectionCellTestViewController.m */; };
 		D62B79541B953214008E728E /* iTunesBackupHandlerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D62B79521B953214008E728E /* iTunesBackupHandlerViewController.m */; };
 		D62B79551B953214008E728E /* iTunesBackupHandlerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62B79531B953214008E728E /* iTunesBackupHandlerViewController.xib */; };
 		D62B795A1B969EFC008E728E /* LayerMaskTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D62B79581B969EFC008E728E /* LayerMaskTestViewController.m */; };
 		D62B795B1B969EFC008E728E /* LayerMaskTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62B79591B969EFC008E728E /* LayerMaskTestViewController.xib */; };
 		D62B795E1B96A070008E728E /* DragView.m in Sources */ = {isa = PBXBuildFile; fileRef = D62B795D1B96A070008E728E /* DragView.m */; };
 		D62B79611B96CBD1008E728E /* DragVisualEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = D62B79601B96CBD1008E728E /* DragVisualEffectView.m */; };
+		D65C8F5B1C0854830063406C /* CIFilterMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C8F591C0854830063406C /* CIFilterMainViewController.m */; };
+		D65C8F5C1C0854830063406C /* CIFilterMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65C8F5A1C0854830063406C /* CIFilterMainViewController.xib */; };
 		D69863F91B8DB0D400F64908 /* CGAffineTransformTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69863F71B8DB0D400F64908 /* CGAffineTransformTestViewController.m */; };
 		D69863FA1B8DB0D400F64908 /* CGAffineTransformTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69863F81B8DB0D400F64908 /* CGAffineTransformTestViewController.xib */; };
 		D69863FE1B8DBBD200F64908 /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D69863FD1B8DBBD200F64908 /* BlockTest.m */; };
@@ -40,8 +42,9 @@
 		D6A0B8361BAFEC8900229CBD /* ScrollViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A0B8341BAFEC8900229CBD /* ScrollViewTestViewController.m */; };
 		D6A0B8371BAFEC8900229CBD /* ScrollViewTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A0B8351BAFEC8900229CBD /* ScrollViewTestViewController.xib */; };
 		D6AF1FE01BA674FD00229224 /* IDsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF1FDE1BA674FD00229224 /* IDsViewController.m */; };
+		D6BCED651C0E7CA3009751B5 /* FilteredWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BCED641C0E7CA3009751B5 /* FilteredWebCache.m */; };
 		D6C28F071B8C5633008D230E /* MemoryTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C28F061B8C5633008D230E /* MemoryTool.m */; };
-		D6C4466A1BB545B800CAA481 /* IDsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C446691BB545B800CAA481 /* IDsViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		D6C4466A1BB545B800CAA481 /* IDsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C446691BB545B800CAA481 /* IDsViewController.xib */; };
 		D6C9B11F1BA040EF00168941 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9B11D1BA040EF00168941 /* ParentViewController.m */; };
 		D6C9B1201BA040EF00168941 /* ParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C9B11E1BA040EF00168941 /* ParentViewController.xib */; };
 		D6C9B1291BA0411300168941 /* ChildViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9B1271BA0411300168941 /* ChildViewController2.m */; };
@@ -58,9 +61,9 @@
 		D6CDA08D1B86F2FA00ECBFEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CDA08B1B86F2FA00ECBFEF /* LaunchScreen.xib */; };
 		D6CDA0A71B86F72D00ECBFEF /* TrafficCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDA0A51B86F72C00ECBFEF /* TrafficCountViewController.m */; };
 		D6CDA0A81B86F72D00ECBFEF /* TrafficCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CDA0A61B86F72C00ECBFEF /* TrafficCountViewController.xib */; };
-		D6DA6AE71BBBB78900C54C7C /* AnimationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DA6AE61BBBB78900C54C7C /* AnimationStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
-		D6DA6AEA1BBBB86400C54C7C /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DA6AE91BBBB86400C54C7C /* AnimationViewController.m */; settings = {ASSET_TAGS = (); }; };
-		D6DA6AED1BBBBA6A00C54C7C /* CAKeyframeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DA6AEC1BBBBA6A00C54C7C /* CAKeyframeAnimationViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D6DA6AE71BBBB78900C54C7C /* AnimationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DA6AE61BBBB78900C54C7C /* AnimationStoryboard.storyboard */; };
+		D6DA6AEA1BBBB86400C54C7C /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DA6AE91BBBB86400C54C7C /* AnimationViewController.m */; };
+		D6DA6AED1BBBBA6A00C54C7C /* CAKeyframeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DA6AEC1BBBBA6A00C54C7C /* CAKeyframeAnimationViewController.m */; };
 		D6F64D141BABA13F00CF9E09 /* DrawRectTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F64D121BABA13F00CF9E09 /* DrawRectTestViewController.m */; };
 		D6F64D151BABA13F00CF9E09 /* DrawRectTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F64D131BABA13F00CF9E09 /* DrawRectTestViewController.xib */; };
 		D6F64D181BABA15B00CF9E09 /* DrawRectTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F64D171BABA15B00CF9E09 /* DrawRectTestView.m */; };
@@ -81,6 +84,9 @@
 		D62B795D1B96A070008E728E /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
 		D62B795F1B96CBD1008E728E /* DragVisualEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragVisualEffectView.h; sourceTree = "<group>"; };
 		D62B79601B96CBD1008E728E /* DragVisualEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragVisualEffectView.m; sourceTree = "<group>"; };
+		D65C8F581C0854830063406C /* CIFilterMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIFilterMainViewController.h; sourceTree = "<group>"; };
+		D65C8F591C0854830063406C /* CIFilterMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIFilterMainViewController.m; sourceTree = "<group>"; };
+		D65C8F5A1C0854830063406C /* CIFilterMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIFilterMainViewController.xib; sourceTree = "<group>"; };
 		D69863F61B8DB0D400F64908 /* CGAffineTransformTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAffineTransformTestViewController.h; sourceTree = "<group>"; };
 		D69863F71B8DB0D400F64908 /* CGAffineTransformTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAffineTransformTestViewController.m; sourceTree = "<group>"; };
 		D69863F81B8DB0D400F64908 /* CGAffineTransformTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CGAffineTransformTestViewController.xib; sourceTree = "<group>"; };
@@ -132,6 +138,8 @@
 		D6A0B8351BAFEC8900229CBD /* ScrollViewTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewTestViewController.xib; sourceTree = "<group>"; };
 		D6AF1FDD1BA674FD00229224 /* IDsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDsViewController.h; sourceTree = "<group>"; };
 		D6AF1FDE1BA674FD00229224 /* IDsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDsViewController.m; sourceTree = "<group>"; };
+		D6BCED631C0E7CA3009751B5 /* FilteredWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilteredWebCache.h; sourceTree = "<group>"; };
+		D6BCED641C0E7CA3009751B5 /* FilteredWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilteredWebCache.m; sourceTree = "<group>"; };
 		D6C28F051B8C5633008D230E /* MemoryTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryTool.h; sourceTree = "<group>"; };
 		D6C28F061B8C5633008D230E /* MemoryTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryTool.m; sourceTree = "<group>"; };
 		D6C446691BB545B800CAA481 /* IDsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDsViewController.xib; sourceTree = "<group>"; };
@@ -210,6 +218,23 @@
 			path = LayerMaskTest;
 			sourceTree = "<group>";
 		};
+		D65C8F571C0854650063406C /* CIFilterTest */ = {
+			isa = PBXGroup;
+			children = (
+				D65C8F581C0854830063406C /* CIFilterMainViewController.h */,
+				D65C8F591C0854830063406C /* CIFilterMainViewController.m */,
+				D65C8F5A1C0854830063406C /* CIFilterMainViewController.xib */,
+			);
+			path = CIFilterTest;
+			sourceTree = "<group>";
+		};
+		D6675F141C15658B002DAC4E /* MusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MusicPlayer;
+			sourceTree = "<group>";
+		};
 		D69863F51B8DB07D00F64908 /* CGAffineTransformTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +259,8 @@
 			children = (
 				D69864001B8EBBF000F64908 /* WKWebViewTestViewController.h */,
 				D69864011B8EBBF000F64908 /* WKWebViewTestViewController.m */,
+				D6BCED631C0E7CA3009751B5 /* FilteredWebCache.h */,
+				D6BCED641C0E7CA3009751B5 /* FilteredWebCache.m */,
 			);
 			path = WKWebViewTest;
 			sourceTree = "<group>";
@@ -433,6 +460,7 @@
 		D6CDA0A21B86F6B800ECBFEF /* functions */ = {
 			isa = PBXGroup;
 			children = (
+				D6675F141C15658B002DAC4E /* MusicPlayer */,
 				D62B79561B969EE7008E728E /* LayerMaskTest */,
 				D62B79501B9531FA008E728E /* iTunesBackupHandler */,
 				D69863FB1B8DBBBF00F64908 /* Block */,
@@ -446,6 +474,7 @@
 				D6F64D191BABE17000CF9E09 /* Bluetooth */,
 				D6A0B8321BAFEC6D00229CBD /* ScrollViewTest */,
 				D6DA6ADB1BBBB70900C54C7C /* CAAnimation */,
+				D65C8F571C0854650063406C /* CIFilterTest */,
 			);
 			path = functions;
 			sourceTree = "<group>";
@@ -563,6 +592,7 @@
 				D62B795B1B969EFC008E728E /* LayerMaskTestViewController.xib in Resources */,
 				D6DA6AE71BBBB78900C54C7C /* AnimationStoryboard.storyboard in Resources */,
 				D6C9B12A1BA0411300168941 /* ChildViewController2.xib in Resources */,
+				D65C8F5C1C0854830063406C /* CIFilterMainViewController.xib in Resources */,
 				D6F64D1E1BABE34600CF9E09 /* BluetoothViewController.xib in Resources */,
 				D6A0B82D1BAFEC1A00229CBD /* MJRefresh.bundle in Resources */,
 				D6CDA08A1B86F2FA00ECBFEF /* Images.xcassets in Resources */,
@@ -590,10 +620,12 @@
 				D6CDA0851B86F2FA00ECBFEF /* ViewController.m in Sources */,
 				D6C9B11F1BA040EF00168941 /* ParentViewController.m in Sources */,
 				D6AF1FE01BA674FD00229224 /* IDsViewController.m in Sources */,
+				D65C8F5B1C0854830063406C /* CIFilterMainViewController.m in Sources */,
 				D6C28F071B8C5633008D230E /* MemoryTool.m in Sources */,
 				D6A0B8211BAFEC1A00229CBD /* MJRefreshComponent.m in Sources */,
 				D6C9B1381BA0485B00168941 /* ChildViewController1.m in Sources */,
 				D6A0B8271BAFEC1A00229CBD /* MJRefreshBackGifFooter.m in Sources */,
+				D6BCED651C0E7CA3009751B5 /* FilteredWebCache.m in Sources */,
 				D69864031B8EBBF000F64908 /* WKWebViewTestViewController.m in Sources */,
 				D61802481BC8F770004C7248 /* CollectionCellTestViewController.m in Sources */,
 				D6CDA0821B86F2FA00ECBFEF /* AppDelegate.m in Sources */,

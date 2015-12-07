@@ -20,6 +20,7 @@
 #import "BluetoothViewController.h"
 #import "ScrollViewTestViewController.h"
 #import "AnimationViewController.h"
+#import "CIFilterMainViewController.h"
 @interface ViewController (){
     NSArray *functionNameArray;
 }
@@ -46,6 +47,7 @@
                        @"蓝牙测试",
                        @"ScrollViewTestViewController",
                        @"Animation动画",
+                       @"滤镜的使用",
                    nil];
     [self.mainTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseCellIdn"];
 }
@@ -138,6 +140,11 @@
         case 12:{
             UIStoryboard *animationStoryBoard=[UIStoryboard storyboardWithName:@"AnimationStoryboard" bundle:nil];
             UIViewController *vc = [animationStoryBoard instantiateViewControllerWithIdentifier:@"AnimationViewController"];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 13:{
+            CIFilterMainViewController *vc=[[CIFilterMainViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
