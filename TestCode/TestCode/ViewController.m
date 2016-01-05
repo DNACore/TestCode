@@ -48,6 +48,7 @@
                        @"ScrollViewTestViewController",
                        @"Animation动画",
                        @"滤镜的使用",
+                       @"音乐播放",
                    nil];
     [self.mainTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseCellIdn"];
 }
@@ -145,6 +146,11 @@
             break;
         case 13:{
             CIFilterMainViewController *vc=[[CIFilterMainViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 14:{
+            id vc=[[NSClassFromString(@"MusicPlayViewController") alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

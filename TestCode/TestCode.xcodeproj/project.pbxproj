@@ -16,6 +16,12 @@
 		D62B79611B96CBD1008E728E /* DragVisualEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = D62B79601B96CBD1008E728E /* DragVisualEffectView.m */; };
 		D65C8F5B1C0854830063406C /* CIFilterMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C8F591C0854830063406C /* CIFilterMainViewController.m */; };
 		D65C8F5C1C0854830063406C /* CIFilterMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65C8F5A1C0854830063406C /* CIFilterMainViewController.xib */; };
+		D6675F181C1565EF002DAC4E /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6675F161C1565EF002DAC4E /* MusicListViewController.m */; };
+		D6675F191C1565EF002DAC4E /* MusicListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6675F171C1565EF002DAC4E /* MusicListViewController.xib */; };
+		D6675F1D1C156606002DAC4E /* MusicPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6675F1B1C156606002DAC4E /* MusicPlayViewController.m */; };
+		D6675F1E1C156606002DAC4E /* MusicPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6675F1C1C156606002DAC4E /* MusicPlayViewController.xib */; };
+		D6675F211C156B28002DAC4E /* Waver.m in Sources */ = {isa = PBXBuildFile; fileRef = D6675F201C156B28002DAC4E /* Waver.m */; };
+		D6675F231C157162002DAC4E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6675F221C157162002DAC4E /* AVFoundation.framework */; };
 		D69863F91B8DB0D400F64908 /* CGAffineTransformTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69863F71B8DB0D400F64908 /* CGAffineTransformTestViewController.m */; };
 		D69863FA1B8DB0D400F64908 /* CGAffineTransformTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69863F81B8DB0D400F64908 /* CGAffineTransformTestViewController.xib */; };
 		D69863FE1B8DBBD200F64908 /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D69863FD1B8DBBD200F64908 /* BlockTest.m */; };
@@ -87,6 +93,15 @@
 		D65C8F581C0854830063406C /* CIFilterMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIFilterMainViewController.h; sourceTree = "<group>"; };
 		D65C8F591C0854830063406C /* CIFilterMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIFilterMainViewController.m; sourceTree = "<group>"; };
 		D65C8F5A1C0854830063406C /* CIFilterMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIFilterMainViewController.xib; sourceTree = "<group>"; };
+		D6675F151C1565EF002DAC4E /* MusicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListViewController.h; sourceTree = "<group>"; };
+		D6675F161C1565EF002DAC4E /* MusicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListViewController.m; sourceTree = "<group>"; };
+		D6675F171C1565EF002DAC4E /* MusicListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicListViewController.xib; sourceTree = "<group>"; };
+		D6675F1A1C156606002DAC4E /* MusicPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayViewController.h; sourceTree = "<group>"; };
+		D6675F1B1C156606002DAC4E /* MusicPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayViewController.m; sourceTree = "<group>"; };
+		D6675F1C1C156606002DAC4E /* MusicPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicPlayViewController.xib; sourceTree = "<group>"; };
+		D6675F1F1C156B28002DAC4E /* Waver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Waver.h; sourceTree = "<group>"; };
+		D6675F201C156B28002DAC4E /* Waver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Waver.m; sourceTree = "<group>"; };
+		D6675F221C157162002DAC4E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D69863F61B8DB0D400F64908 /* CGAffineTransformTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAffineTransformTestViewController.h; sourceTree = "<group>"; };
 		D69863F71B8DB0D400F64908 /* CGAffineTransformTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAffineTransformTestViewController.m; sourceTree = "<group>"; };
 		D69863F81B8DB0D400F64908 /* CGAffineTransformTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CGAffineTransformTestViewController.xib; sourceTree = "<group>"; };
@@ -188,6 +203,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6675F231C157162002DAC4E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +247,14 @@
 		D6675F141C15658B002DAC4E /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				D6675F1F1C156B28002DAC4E /* Waver.h */,
+				D6675F201C156B28002DAC4E /* Waver.m */,
+				D6675F151C1565EF002DAC4E /* MusicListViewController.h */,
+				D6675F161C1565EF002DAC4E /* MusicListViewController.m */,
+				D6675F171C1565EF002DAC4E /* MusicListViewController.xib */,
+				D6675F1A1C156606002DAC4E /* MusicPlayViewController.h */,
+				D6675F1B1C156606002DAC4E /* MusicPlayViewController.m */,
+				D6675F1C1C156606002DAC4E /* MusicPlayViewController.xib */,
 			);
 			path = MusicPlayer;
 			sourceTree = "<group>";
@@ -450,6 +474,7 @@
 		D6CDA07C1B86F2FA00ECBFEF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D6675F221C157162002DAC4E /* AVFoundation.framework */,
 				D6CDA07D1B86F2FA00ECBFEF /* Info.plist */,
 				D6CDA07E1B86F2FA00ECBFEF /* main.m */,
 				D69EF8AD1B872661000B7976 /* PrefixHeader.pch */,
@@ -557,6 +582,7 @@
 				TargetAttributes = {
 					D6CDA0781B86F2FA00ECBFEF = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = WCF46TW5R7;
 					};
 				};
 			};
@@ -599,7 +625,9 @@
 				D6C9B12F1BA0412500168941 /* ChildViewController3.xib in Resources */,
 				D69863FA1B8DB0D400F64908 /* CGAffineTransformTestViewController.xib in Resources */,
 				D6C9B1391BA0485B00168941 /* ChildViewController1.xib in Resources */,
+				D6675F191C1565EF002DAC4E /* MusicListViewController.xib in Resources */,
 				D6F64D151BABA13F00CF9E09 /* DrawRectTestViewController.xib in Resources */,
+				D6675F1E1C156606002DAC4E /* MusicPlayViewController.xib in Resources */,
 				D62B79551B953214008E728E /* iTunesBackupHandlerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,6 +643,7 @@
 				D6DA6AED1BBBBA6A00C54C7C /* CAKeyframeAnimationViewController.m in Sources */,
 				D6C9B1291BA0411300168941 /* ChildViewController2.m in Sources */,
 				D6A0B81F1BAFEC1A00229CBD /* MJRefreshAutoFooter.m in Sources */,
+				D6675F211C156B28002DAC4E /* Waver.m in Sources */,
 				D6F64D1D1BABE34600CF9E09 /* BluetoothViewController.m in Sources */,
 				D62B79541B953214008E728E /* iTunesBackupHandlerViewController.m in Sources */,
 				D6CDA0851B86F2FA00ECBFEF /* ViewController.m in Sources */,
@@ -635,6 +664,7 @@
 				D6A0B82C1BAFEC1A00229CBD /* MJRefreshStateHeader.m in Sources */,
 				D6A0B8281BAFEC1A00229CBD /* MJRefreshBackNormalFooter.m in Sources */,
 				D6A0B8301BAFEC1A00229CBD /* UIScrollView+MJRefresh.m in Sources */,
+				D6675F1D1C156606002DAC4E /* MusicPlayViewController.m in Sources */,
 				D6A0B8251BAFEC1A00229CBD /* MJRefreshAutoNormalFooter.m in Sources */,
 				D6CDA0A71B86F72D00ECBFEF /* TrafficCountViewController.m in Sources */,
 				D6A0B82B1BAFEC1A00229CBD /* MJRefreshNormalHeader.m in Sources */,
@@ -649,6 +679,7 @@
 				D6A0B8221BAFEC1A00229CBD /* MJRefreshFooter.m in Sources */,
 				D6F64D141BABA13F00CF9E09 /* DrawRectTestViewController.m in Sources */,
 				D6A0B8291BAFEC1A00229CBD /* MJRefreshBackStateFooter.m in Sources */,
+				D6675F181C1565EF002DAC4E /* MusicListViewController.m in Sources */,
 				D62B79611B96CBD1008E728E /* DragVisualEffectView.m in Sources */,
 				D6A0B8231BAFEC1A00229CBD /* MJRefreshHeader.m in Sources */,
 				D6CDA07F1B86F2FA00ECBFEF /* main.m in Sources */,
@@ -697,6 +728,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -741,6 +773,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -766,11 +799,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TestCode/PrefixHeader.pch;
 				INFOPLIST_FILE = TestCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -779,11 +815,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TestCode/PrefixHeader.pch;
 				INFOPLIST_FILE = TestCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

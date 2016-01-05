@@ -72,7 +72,7 @@
     
     webViewTest=[[WKWebView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-44)];
     webViewTest.navigationDelegate=self;
-    [webViewTest loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com/"]]];
+    [webViewTest loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://index.moji.com/show/aqi/index?platform=qqbrowser&cityid=5"]]];
     [self.view addSubview:webViewTest];
 }
 
