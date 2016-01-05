@@ -224,9 +224,7 @@
 /*
  
  idfa（Advertising Identifier）:可以理解为广告id，apple公司提供的用于追踪用户的广告标识符。
- 
- 缺点：用户可通过设置-隐私-广告-还原广告标识符 还原，之后会得新的到标识符；
- 
+ 缺点：用户可通过设置-隐私-广告-还原广告标识符 还原，之后会得新的到标识符；删除程序重新安装不会影响 IDFA
  要求iOS>=6.0。
  */
 
@@ -270,7 +268,7 @@
 
 /*
  idfv （identifierForVendor）:apple提供给Vendor的唯一标识符，Vendor代表了应用开发商，实际使用时，一个Vendor是CFBundleIdentifier（反转DNS格式）的前两部分。例如，com.baidu.tieba 和 com.baidu.image 得到的idfv是相同的，因为它们的CFBundleIdentifier 前两部分是相同的。
- 缺点：把同一个开发商的所有应用卸载后，再次安装取到的idfv会不同。假设手机上装有公司的两款app:贴吧、
+ 缺点：把同一个开发商的所有应用卸载后，再次安装取到的idfv会不同。假设手机上装有公司的两款app:贴吧、百度云。那么删除其中一个而留有另外一个。再次安装被删除的APP，获取到的IDFV是相同的。
  要求：iOS>=6.0
  */
 - (NSString *)idfvString
