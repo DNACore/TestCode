@@ -115,8 +115,15 @@
     }
 }
 
+//UUID生成方法很多种，这里只写出一种。
+//每次生成均不一样，所以第一次生成后需要保存到钥匙串，这样即使应用删除再重装仍然可以从钥匙串得到它。
 -(NSString *)getUUID{
-    return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    CFUUIDRef puuid = CFUUIDCreate( nil );
+    CFStringRef uuidString = CFUUIDCreateString( nil, puuid );
+    NSString * result = (NSString *)CFBridgingRelease(CFStringCreateCopy( NULL, uuidString));
+    CFRelease(puuid);
+    CFRelease(uuidString);
+    return result;
 }
 
 #pragma mark - 加载进度条
@@ -214,6 +221,15 @@
     return macString;
 }
 
+/*
+ 
+ idfa（Advertising Identifier）:可以理解为广告id，apple公司提供的用于追踪用户的广告标识符。
+ 
+ 缺点：用户可通过设置-隐私-广告-还原广告标识符 还原，之后会得新的到标识符；
+ 
+ 要求iOS>=6.0。
+ */
+
 - (NSString *)idfaString {
     
     NSBundle *adSupportBundle = [NSBundle bundleWithPath:@"/System/Library/Frameworks/AdSupport.framework"];
@@ -252,6 +268,11 @@
     }
 }
 
+/*
+ idfv （identifierForVendor）:apple提供给Vendor的唯一标识符，Vendor代表了应用开发商，实际使用时，一个Vendor是CFBundleIdentifier（反转DNS格式）的前两部分。例如，com.baidu.tieba 和 com.baidu.image 得到的idfv是相同的，因为它们的CFBundleIdentifier 前两部分是相同的。
+ 缺点：把同一个开发商的所有应用卸载后，再次安装取到的idfv会不同。假设手机上装有公司的两款app:贴吧、
+ 要求：iOS>=6.0
+ */
 - (NSString *)idfvString
 {
     if([[UIDevice currentDevice] respondsToSelector:@selector( identifierForVendor)]) {
